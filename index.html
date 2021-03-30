@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/product.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/footer.css">
+        
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,10 +26,13 @@
     </head>
     <body>
 
-
+    
         <nav class="navbar navbar-inverse navbar-fixed-top">
+
+           
             <div class="container-fluid">
               <!-- Brand and toggle get grouped for better mobile display -->
+              
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                   <span class="sr-only">Toggle navigation</span>
@@ -35,7 +40,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                
+                <a class="navbar-brand" href="#">Brand</a>  
               </div>
           
 
@@ -45,42 +50,7 @@
                 
                 <form class="navbar-form">
                   
-                         <!--cart shopping-->
-                 <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Tu Pedido <span id="cant_item" class="badge"> $ 0 </span> </button>
-                 <div id="demo" class="collapse">
-                     <div class="panel panel-info">
-                         <div class="panel-heading">
-                         </div>
-                         <div class="panel-body">
-                               <div class="table-responsive">
-                                   <table class="table table-hover">
-                                       <thead>
-                                           <tr>
-                                               <th>Producto</th>
-                                               <th>Cantidad</th>
-                                               <th>Precio Unitario</th>
-                                               <th>Total price</th>
-                                           </tr>
-                                       </thead>
-                                       <tbody>
-                                       </tbody>
-                                   </table>
-                               </div>
-                         </div>
-                       <div class="panel-footer">
-                           <div class="text-right">
-                               <button class="btn btn-default disabled" type="button">
-                                      Total <span id="price" class="badge">0.00</span>
-                               </button>
-                               <button class="btn btn-primary"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Check command</button>
-                           </div>
-                       </div>
-                   </div>
- 
- 
-                 </div>
-             </div>
-               <!--end cart shopping-->
+                        
             </div>
 
                 </form>
@@ -282,6 +252,50 @@
        
         </div><!-- /.container -->
 
+        
+        <footer class="footer navbar-fixed-bottom">
+            <div class="container">
+                 <!--cart shopping-->
+                 <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo"> 
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i> Tu Pedido <span id="cant_item" class="badge"> $ 0 </span> 
+                    </button>
+
+                 <div id="demo" class="collapse">
+                     <div class="panel panel-info">
+                         <div class="panel-heading">
+                         </div>
+                         <div class="panel-body">
+                               <div class="table-responsive">
+                                   <table class="table table-hover">
+                                       <thead>
+                                           <tr>
+                                               <th>Producto</th>
+                                               <th>Cantidad</th>
+                                               <th>Precio Unitario</th>
+                                               <th>Total price</th>
+                                           </tr>
+                                       </thead>
+                                       <tbody>
+                                       </tbody>
+                                   </table>
+                               </div>
+                         </div>
+                       <div class="panel-footer">
+                           <div class="text-right">
+                               <button class="btn btn-default disabled" type="button">
+                                      Total <span id="price" class="badge">0.00</span>
+                               </button>
+                               <button class="btn btn-primary"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Check command</button>
+                           </div>
+                       </div>
+                   </div>
+ 
+ 
+                 </div>
+             </div>
+               <!--end cart shopping-->
+            </div>
+          </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery.min.js"></script>
