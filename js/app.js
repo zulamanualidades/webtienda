@@ -26,27 +26,17 @@ $(document).ready(function () {
                 '<tr id="ligne">' +
                     '<td class="id_produit hidden" id-data="'+id_product+'" ></td> '+
                     '<td class="nom">'+add.parent().parent().parent().find('.name_product').text()+'</td>'+
+                    '<td class="qte"><span class="quantite">'+q+'&nbsp;</span><button id="addQ" class="btn btn-info btn-sm plusmoin btn-raised"><em class="fa fa-plus"></em></button><button id="reduce" class="btn btn-warning btn-sm plusmoin btn-raised"><em class="fa fa-minus"></em></button> </td>'+
                     '<td class="prix">'+add.parent().parent().parent().find('.price-u').text()+'</td>'+
-                    '<td class="qte"><span class="quantite">'+q+'&nbsp;</span><button id="addQ" class="btn btn-info btn-sm plusmoin btn-raised"><em class="fa fa-plus"></em></button><button id="reduce" class="btn btn-warning btn-sm plusmoin btn-raised"><em class="fa fa-minus"></em></button> </td>'+
                     '<td class="total">'+add.parent().parent().parent().find('.price-u').text()+'</td>'+
-                    '<td><a href="#" id="remove_cart" class="remove_cart"><i class="fa fa-times"></i></a></td>'+
+                   /* '<td><a href="#" id="remove_cart" class="remove_cart"><i class="fa fa-times"></i></a></td>'+*/
                 '</tr>';
-
-              /*  var tr=
-                '<tr>' +
-                    '<td scope="row" id-data="'+id_product+'" ></td> '+
-                    '<td>'+add.parent().parent().parent().find('.name_product').text()+'</td>'+
-                    '<td>'+add.parent().parent().parent().find('.price-u').text()+'</td>'+
-                    '<td class="qte"><span class="quantite">'+q+'&nbsp;</span><button id="addQ" class="btn btn-info btn-sm plusmoin btn-raised"><em class="fa fa-plus"></em></button><button id="reduce" class="btn btn-warning btn-sm plusmoin btn-raised"><em class="fa fa-minus"></em></button> </td>'+
-                    '<td>'+add.parent().parent().parent().find('.price-u').text()+'</td>'+
-                    '<td><a href="#" id="remove_cart" class="remove_cart"><i class="fa fa-times"></i></a></td>'+
-                '</tr>';*/
 
             $('tbody').prepend(tr)
             $.notify({
                     // Options
                     icon: 'fa fa-check-circle',
-                    message: 'Product has been successfully added',
+                    message: 'El producto se ha agregado correctamente ',
 
                 },
                 {
@@ -95,7 +85,7 @@ $(document).ready(function () {
         //Retrieve the product ID 
         var id_product_delete_rp=remove.parents('tr').find('.id_produit').attr('id-data');
         //Modal box appears to confirm the removal of the product
-        bootbox.confirm("are you sure ?",function (result) {       
+        bootbox.confirm("Estas Seguro?",function (result) {       
             if(result){
                 //If YES, delete the product from the shopping cart and calculate the new total
                 if($.inArray(id_product_delete_rp,tab_panier)>=0){
@@ -114,7 +104,7 @@ $(document).ready(function () {
                     remove.parents('tr').hide('slow', function(){ remove.parents('tr').remove(); });
                 }
                 else{
-                    bootbox.alert("Impossile to remove the product!!!")
+                    bootbox.alert("Imposible de remover el Producto!!!")
                 }
             }
             else{
@@ -152,7 +142,7 @@ $(document).ready(function () {
         var id_product_delete=reduce.parent().parent().find('.id_produit').attr('id-data');
         var new_quantity=parseInt(reduce.parent().parent().find('.quantite').html())-1;
         if(new_quantity<=0){
-            bootbox.confirm("you will remove the product, are you sure ?", function (r) {
+            bootbox.confirm("Se quitará el producto, ¿Estás seguro?", function (r) {
                 if(r){
 
                     if($.inArray(id_product_delete,tab_panier)>=0){
