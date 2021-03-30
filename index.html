@@ -34,6 +34,10 @@
                     </button>
                     <a class="navbar-brand" href="#">jQuery-ShoppingCart</a>
                 </div>
+
+                
+
+
                 <div id="navbar" class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Home</a></li>
@@ -47,7 +51,7 @@
         <div class="container" style="padding-top:70px;">
 
             <!--cart shopping-->
-            
+            <!--
 
                 <div class="panel panel-info">
                 	  <div class="panel-heading">
@@ -79,8 +83,53 @@
                         </div>
                     </div>
                 </div>
-
+            -->
             <!--end cart shopping-->
+            <div class="container">
+                
+                <!--h2>Simple Collapsible</h2>
+                <p>Click on the button to toggle between showing and hiding content.</p-->
+                
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Tu Pedido <span id="cant_item" class="badge"> $ 0 </span> </button>
+
+                <div id="demo" class="collapse">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                              <!--h3 class="panel-title"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Tu Pedido</h3-->
+                        </div>
+                        <div class="panel-body">
+                              <div class="table-responsive">
+                                  <table class="table table-hover">
+                                      <thead>
+                                          <tr>
+                                            
+                                              <th>Product designation</th>
+                                              <th>Unit price</th>
+                                              <th>Quantity</th>
+                                              <th>Total price</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                      </tbody>
+                                  </table>
+                              </div>
+                        </div>
+                      <div class="panel-footer">
+                          <div class="text-right">
+                              <button class="btn btn-default disabled" type="button">
+                                     Total <span id="price" class="badge">0.00</span>
+                              </button>
+                              <button class="btn btn-primary"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Check command</button>
+                          </div>
+                      </div>
+                  </div>
+
+
+                </div>
+              </div>
+              
+
+
             <!-- Filter product -->
             <div class="row">
                 <div class="col-sm-12">

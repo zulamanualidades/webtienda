@@ -83,6 +83,7 @@ $(document).ready(function () {
             total=total+parseFloat($(this).find('.total').html())
         })
         $('#price').text(total.toFixed(2));
+        $('#cant_item').text("$ "+ total.toFixed(2));
 
 
     })
@@ -103,6 +104,7 @@ $(document).ready(function () {
                     })
                     $newtotal_rp=parseFloat($('#price').html())-parseFloat(remove.parent().parent().find('.total').html());
                     $('#price').text($newtotal_rp.toFixed(2));
+                    $('#cant_item').text($newtotal_rp.toFixed(2));
                     $('#products').find('.info').each(function () {
                         if(id_product_delete_rp==$(this).find('.add').attr('id-data')){
                             $(this).find('#nbr-check').text('')
@@ -131,6 +133,7 @@ $(document).ready(function () {
         add.parent().parent().find('.quantite').text(parseInt(add.parent().parent().find('.quantite').html())+1);
         add.parent().parent().find('.total').text($newtotalproduct.toFixed(2));
         $('#price').text($newalltotal.toFixed(2));
+        $('#cant_item').text("$ "+ $newalltotal.toFixed(2));
         $('#products').find('.info').each(function () {
             if(add.parent().parent().find('.id_produit').attr('id-data')==$(this).find('.add').attr('id-data')){
                 $(this).find('#nbr-check').text(parseInt($(this).find('#nbr-check').html())+1 )
@@ -161,8 +164,10 @@ $(document).ready(function () {
                         $new_total_all_products=parseFloat($('#price').html())-$total;
                         if($new_total_all_products<=0){
                             $('#price').text('0');
+                            $('#cant_item').text("$ "+ '0');
                         }else{
                             $('#price').text($new_total_all_products.toFixed(2))
+                            $('#cant_item').text("$" + $new_total_all_products.toFixed(2))
                         }
 
                         $('#products').find('.info').each(function () {
@@ -187,6 +192,7 @@ $(document).ready(function () {
                 t=t+parseFloat($(this).find('.total').html())
             })
             $('#price').text(t.toFixed(2));
+            $('#cant_item').text("$" + t.toFixed(2));
             t=0;
         }
     })
