@@ -8,6 +8,7 @@ $(document).ready(function () {
   /***********************************************************************************/  
   /***********************************************************************************/  
   // Tab_panier array containing the product ids added to the shopping cart 
+  
     var tab_panier=[];     
     //Add new product to shopping cart
     $('.add').on('click', function (e) {
