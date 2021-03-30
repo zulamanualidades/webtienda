@@ -3,5 +3,5 @@ footer{
     min-height:40px;    
     padding-top: 10px; 
     padding-bottom: 10px; 
-    background-color: #222; /* This color gets inverted color or you can add navbar inverse class in html */
+    background-color: #ffff; /* This color gets inverted color or you can add navbar inverse class in html */
 }

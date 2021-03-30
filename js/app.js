@@ -27,7 +27,7 @@ $(document).ready(function () {
                 '<tr id="ligne">' +
                     '<td class="id_produit hidden" id-data="'+id_product+'" ></td> '+
                     '<td class="nom">'+add.parent().parent().parent().find('.name_product').text()+'</td>'+
-                    '<td class="qte"><span class="quantite">'+ q+'&nbsp;</span><button id="addQ" class="btn btn-info btn-sm plusmoin btn-raised"><em class="fa fa-plus"></em></button><button id="reduce" class="btn btn-warning btn-sm plusmoin btn-raised"><em class="fa fa-minus"></em></button> </td>'+
+                    '<td class="qte"><button id="addQ" class="btn btn-info btn-sm plusmoin btn-raised"><em class="fa fa-plus"></em></button><span class="quantite"> '+ q +'&nbsp;</span><button id="reduce" class="btn btn-warning btn-sm plusmoin btn-raised"><em class="fa fa-minus"></em></button> </td>'+
                     '<td class="prix">'+add.parent().parent().parent().find('.price-u').text()+'</td>'+
                     '<td class="total">'+add.parent().parent().parent().find('.price-u').text()+'</td>'+
                    /* '<td><a href="#" id="remove_cart" class="remove_cart"><i class="fa fa-times"></i></a></td>'+*/
@@ -62,7 +62,7 @@ $(document).ready(function () {
                 if(id_product==$(this).find('.id_produit').attr('id-data')){
                     $newq=parseInt($(this).find('.quantite').html())+1;
                     $newp=parseFloat($(this).find('.prix').html())*$newq;
-                    $(this).find('.quantite').text($newq);
+                    $(this).find('.quantite').text(' '+ $newq +' ');
                     $(this).find('.total').text($newp.toFixed(2))
                     checked.text(parseInt(checked.html())+1);
                 }
@@ -121,7 +121,8 @@ $(document).ready(function () {
         //Retrieve the product ID    
         $newtotalproduct=parseFloat(add.parent().parent().find('.total').html())+parseFloat(add.parent().parent().find('.prix').html());
         $newalltotal=parseFloat(add.parent().parent().find('.prix').html())+parseFloat($('#price').html());
-        add.parent().parent().find('.quantite').text(parseInt(add.parent().parent().find('.quantite').html())+1);
+        var calculo = parseInt(add.parent().parent().find('.quantite').html())+1;
+        add.parent().parent().find('.quantite').text(' '+ calculo +' ');
         add.parent().parent().find('.total').text($newtotalproduct.toFixed(2));
         $('#price').text($newalltotal.toFixed(2));
         $('#cant_item').text("$ "+ $newalltotal.toFixed(2));
@@ -178,7 +179,7 @@ $(document).ready(function () {
                 }
             })
             reduce.parent().parent().find('.total').text($newalltotal.toFixed(2));
-            reduce.parent().parent().find('.quantite').text(new_quantity);
+            reduce.parent().parent().find('.quantite').text(' '+new_quantity+' ');
             $('tbody').find('tr').each(function () {
                 t=t+parseFloat($(this).find('.total').html())
             })
