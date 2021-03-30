@@ -1,6 +1,79 @@
-/**
- * Created by NIMOUR Rabah Oussama on 28/12/2016.
- */
+
+function sendOrder() {
+    var str="";
+    var total=0;
+    
+    document.getElementById('info').innerHTML = "";
+        var myTab = document.getElementById('pedido');
+     
+
+        // LOOP THROUGH EACH ROW OF THE TABLE AFTER HEADER.
+        for (i = 1; i < myTab.rows.length; i++) {
+
+            // GET THE CELLS COLLECTION OF THE CURRENT ROW.
+            var objCells = myTab.rows.item(i).cells;
+            
+
+            // LOOP THROUGH EACH CELL OF THE CURENT ROW TO READ CELL VALUES.
+            for (var j = 0; j < objCells.length-1; j++) {
+
+                if(j=1){
+                  //  info.innerHTML = info.innerHTML + ' ' + objCells.item(j).innerHTML;
+                  str = str + '- ' + objCells.item(j).innerHTML;
+                }
+
+                if(j=2){
+                    //info.innerHTML = info.innerHTML + ' - Cantidad ' + objCells.item(j).innerHTML;
+                    str = str + '  > Cantidad ' + objCells.item(j).innerHTML;
+                }
+
+                if(j=4){
+                    //info.innerHTML = info.innerHTML + ' - Total: $ ' + objCells.item(j).innerHTML;
+                    total=total+parseInt(objCells.item(j).innerHTML);
+                    str = str + ' > Total: $ ' + objCells.item(j).innerHTML;
+                }
+
+                
+              
+            }
+           // info.innerHTML = info.innerHTML + '<br />';     // ADD A BREAK (TAG).
+            str=str+"\n";
+        }
+        str = str + "Monto Total= $"+total;
+        alert(str);
+ 
+}
+
+
+
+
+// Enviar pedido
+function sendOrder1() {
+ 
+     //document.getElementById("purchase").innerHTML = "¡Gracias!";
+  // Obtengo el número de WhatsApp
+  wppNumber = '1156697764';
+  // Empiezo a crear el string del link
+  link =
+    "https://api.whatsapp.com/send?phone=549" +
+    wppNumber +
+    "&text=¡Hola! Te quiero hacer un pedido%0a";
+  // Concatenar productos y cantidades
+  /*for (let item of order) {
+    if (item.cant > 0) {
+      link += item.product + "  x" + item.cant + "%0a";
+    }
+  }*/
+  // Concatenar monto total
+  link += "Total:  $";
+  // Datos extra
+  link += "%0aMi nombre es %0aMi dirección es ";
+  window.open(link);
+    
+  }
+
+
+
 $(document).ready(function () {
   /***********************************************************************************/  
   /***********************************************************************************/
@@ -27,9 +100,10 @@ $(document).ready(function () {
                 '<tr id="ligne">' +
                     '<td class="id_produit hidden" id-data="'+id_product+'" ></td> '+
                     '<td class="nom">'+add.parent().parent().parent().find('.name_product').text()+'</td>'+
+                    '<td class="quantite hidden" >'+ q +'</td>'+
                     '<td class="qte"><button id="addQ" class="btn btn-info btn-sm plusmoin btn-raised"><em class="fa fa-plus"></em></button><span class="quantite"> '+ q +'&nbsp;</span><button id="reduce" class="btn btn-warning btn-sm plusmoin btn-raised"><em class="fa fa-minus"></em></button> </td>'+
-                    '<td class="prix">'+add.parent().parent().parent().find('.price-u').text()+'</td>'+
                     '<td class="total">'+add.parent().parent().parent().find('.price-u').text()+'</td>'+
+                    '<td class="prix hidden">'+add.parent().parent().parent().find('.price-u').text()+'</td>'+
                    /* '<td><a href="#" id="remove_cart" class="remove_cart"><i class="fa fa-times"></i></a></td>'+*/
                 '</tr>';
 
@@ -257,4 +331,8 @@ $(document).ready(function () {
         if($('#search').val()!="")
             $('#search').val("")
     })
+
+
 })
+
+
