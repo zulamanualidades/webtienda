@@ -8,7 +8,7 @@ $(document).ready(function () {
   /***********************************************************************************/  
   /***********************************************************************************/  
   // Tab_panier array containing the product ids added to the shopping cart 
-  
+
     var tab_panier=[];     
     //Add new product to shopping cart
     $('.add').on('click', function (e) {
@@ -27,7 +27,7 @@ $(document).ready(function () {
                 '<tr id="ligne">' +
                     '<td class="id_produit hidden" id-data="'+id_product+'" ></td> '+
                     '<td class="nom">'+add.parent().parent().parent().find('.name_product').text()+'</td>'+
-                    '<td class="qte"><span class="quantite">'+q+'&nbsp;</span><button id="addQ" class="btn btn-info btn-sm plusmoin btn-raised"><em class="fa fa-plus"></em></button><button id="reduce" class="btn btn-warning btn-sm plusmoin btn-raised"><em class="fa fa-minus"></em></button> </td>'+
+                    '<td class="qte"><span class="quantite">'+ q+'&nbsp;</span><button id="addQ" class="btn btn-info btn-sm plusmoin btn-raised"><em class="fa fa-plus"></em></button><button id="reduce" class="btn btn-warning btn-sm plusmoin btn-raised"><em class="fa fa-minus"></em></button> </td>'+
                     '<td class="prix">'+add.parent().parent().parent().find('.price-u').text()+'</td>'+
                     '<td class="total">'+add.parent().parent().parent().find('.price-u').text()+'</td>'+
                    /* '<td><a href="#" id="remove_cart" class="remove_cart"><i class="fa fa-times"></i></a></td>'+*/
