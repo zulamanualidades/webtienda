@@ -47,7 +47,7 @@ function sendOrder() {
      //document.getElementById("purchase").innerHTML = "¡Gracias!";
   // Obtengo el número de WhatsApp
   var str= getData();
-  alert(str);
+  //alert(str);
   wppNumber = '1156697764';
   // Empiezo a crear el string del link
 
@@ -72,6 +72,53 @@ function sendOrder() {
 
 
 $(document).ready(function () {
+    
+    
+
+    var arr = [
+        { fname : "Bart", lname : "Simpson", email: "bsimpson@somedomain.com"},
+        { fname : "Alfred E", lname : "Newman", email: "aenewman@somedomain.com"},
+        { fname : "Steve", lname : "Austin", email: "saustin@somedomain.com"}
+    ]
+
+    var i = 0;
+         arrLen = arr.length - 1,
+         str = "";
+        
+    // loop through all elements in the array, building a form for each object
+    for (; i <= arrLen; i++ ) {
+        
+    str = str + 
+    '<div class="col-sm-3 filter">'
+    +'    <div class="col-item">'
+    +'        <div class="photo">'
+    +'            <img src="https://live.staticflickr.com/65535/51004296660_51d775864e_k.jpg" class="img-responsive" alt="a" />'
+    +'        </div>'
+    +'        <div class="info">'
+    +'            <div class="row">'
+    +'               <div class="price col-md-6">'
+    +'                    <h4 class="name_product"><span>Mauro Castro</span></h4>'
+    +'                   <h5 class="price-text-color price-u">300</h5>'
+    +'                </div>'
+    +'           </div>'
+    +'           <div class="separator clear-left">'
+    +'               <p class="btn-add">'
+    +'                   <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm add" id-data="1">Agregar <span id="nbr-check" class="badge">0</span></a>'
+    +'               </p>'
+    +'               <p class="btn-details">'
+    +'                   <i class="fa fa-list"></i><a href="#" class="hidden-sm detail">Descripcion</a>'
+    +'               </p>'
+    +'           </div>'
+    +'           <div class="clearfix">'
+    +'           </div>'
+    +'       </div>'
+    +'   </div>'
+    +'</div>';
+};
+ 
+//$("#products").html(str);
+//Empieza
+
   /***********************************************************************************/  
   /***********************************************************************************/
   /*================================ Shopping Cart ==================================*/
@@ -328,7 +375,6 @@ $(document).ready(function () {
         if($('#search').val()!="")
             $('#search').val("")
     })
-
 
 })
 
