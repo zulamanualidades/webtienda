@@ -561,8 +561,7 @@ $(document).ready(function () {
     +'            <div class="row">'
     +'               <div class="price col-md-6"">'
     +'                    <h4 class="name_product"><span>'+arr[i].title+'</span></h4>'
-    +'                   <h5 class="price-text-color">$</h5>'
-    +'                   <h5 class="price-text-color price-u">'+arr[i].price+'</h5>'
+    +'           <h5 style="text-align:left;float:left;" class="price-text-color">$&nbsp;</h5><h5 class="price-text-color price-u">'+arr[i].price+'</h5><hr style="clear:both;"/>'
     +'                </div>'
     +'           </div>'
     +'           <div class="separator clear-left">'
@@ -583,7 +582,7 @@ $(document).ready(function () {
     +'          <div class="modal-content">'
     +'            <div class="modal-header">'
     +'              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>'
-    +'              <h4 class="modal-title" id="myModalLabel">Basic Modal</h4>'
+    +'              <h4 class="modal-title" id="myModalLabel">'+arr[i].title+'</h4>'
     +'            </div>'
     +'            <div class="modal-body">'
     +'              <p>'+arr[i].description

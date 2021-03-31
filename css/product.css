@@ -28,6 +28,14 @@
     margin-top: 5px;
 }
 
+
+.hola
+{
+    
+    float:left;margin-left:5px;
+}
+
+
 .col-item .price h5
 {
     line-height: 20px;
