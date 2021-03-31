@@ -1,9 +1,9 @@
 
-function sendOrder() {
+function getData() {
     var str="";
     var total=0;
     
-    document.getElementById('info').innerHTML = "";
+    //document.getElementById('info').innerHTML = "";
         var myTab = document.getElementById('pedido');
      
 
@@ -16,44 +16,41 @@ function sendOrder() {
 
             // LOOP THROUGH EACH CELL OF THE CURENT ROW TO READ CELL VALUES.
             for (var j = 0; j < objCells.length-1; j++) {
-
                 if(j=1){
                   //  info.innerHTML = info.innerHTML + ' ' + objCells.item(j).innerHTML;
                   str = str + '- ' + objCells.item(j).innerHTML;
                 }
-
                 if(j=2){
                     //info.innerHTML = info.innerHTML + ' - Cantidad ' + objCells.item(j).innerHTML;
                     str = str + '  > Cantidad ' + objCells.item(j).innerHTML;
                 }
-
                 if(j=4){
                     //info.innerHTML = info.innerHTML + ' - Total: $ ' + objCells.item(j).innerHTML;
-                    total=total+parseInt(objCells.item(j).innerHTML);
+                    total=total+parseFloat(objCells.item(j).innerHTML);
                     str = str + ' > Total: $ ' + objCells.item(j).innerHTML;
                 }
-
-                
-              
             }
            // info.innerHTML = info.innerHTML + '<br />';     // ADD A BREAK (TAG).
-            str=str+"\n";
+            str=str+"%0a";
         }
-        str = str + "Monto Total= $"+total;
-        alert(str);
- 
+        str = str + "%0a Monto Total: $ "+total;
+        return str;
+        //alert(str);
 }
 
 
 
 
 // Enviar pedido
-function sendOrder1() {
+function sendOrder() {
  
      //document.getElementById("purchase").innerHTML = "¡Gracias!";
   // Obtengo el número de WhatsApp
+  var str= getData();
+  alert(str);
   wppNumber = '1156697764';
   // Empiezo a crear el string del link
+
   link =
     "https://api.whatsapp.com/send?phone=549" +
     wppNumber +
@@ -65,9 +62,9 @@ function sendOrder1() {
     }
   }*/
   // Concatenar monto total
-  link += "Total:  $";
+  link += str;
   // Datos extra
-  link += "%0aMi nombre es %0aMi dirección es ";
+  //link += "%0aMi nombre es %0aMi dirección es ";
   window.open(link);
     
   }
