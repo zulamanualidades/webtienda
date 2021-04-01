@@ -561,7 +561,7 @@ $(document).ready(function () {
     +'            <div class="row">'
     +'               <div class="price col-md-6"">'
     +'                    <h4 class="name_product"><span>'+arr[i].title+'</span></h4>'
-    +'           <h5 style="text-align:left;float:left;" class="price-text-color">$&nbsp;</h5><h5 class="price-text-color price-u">'+arr[i].price+'</h5><hr style="clear:both;"/>'
+    +'           <h5 style="text-align:left;float:left;" class="price-text-color">$&nbsp;</h5><h5 class="price-text-color price-u">'+arr[i].price+'</h5>'
     +'                </div>'
     +'           </div>'
     +'           <div class="separator clear-left">'
@@ -742,6 +742,7 @@ $("#products").html(str);
         var id_product_delete=reduce.parent().parent().find('.id_produit').attr('id-data');
         var new_quantity=parseInt(reduce.parent().parent().find('.quantite').html())-1;
         if(new_quantity<=0){
+            bootbox.setLocale('es');
             bootbox.confirm("Se quitará el producto, ¿Estás seguro?", function (r) {
                 if(r){
 
@@ -753,6 +754,7 @@ $("#products").html(str);
 
                         $new_total_all_products=parseFloat($('#price').html())-$total;
                         if($new_total_all_products<=0){
+                            
                             $('#price').text('0');
                             $('#cant_item').text("$ "+ '0');
                         }else{
@@ -762,7 +764,7 @@ $("#products").html(str);
 
                         $('#products').find('.info').each(function () {
                             if(id_product_delete==$(this).find('.add').attr('id-data')){
-                                $(this).find('#nbr-check').text('')
+                                $(this).find('#nbr-check').text('0')
                                 $(this).find('#checked').addClass('hidden')
                             }
                         })
