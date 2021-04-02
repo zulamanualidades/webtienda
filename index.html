@@ -45,15 +45,6 @@
         </div>
 
         <div class="container" style="padding-top:10px;padding-bottom:70px;">
-            
-              <!--div class="jumbotron text-center jumbotron-billboard">
-                <h1>Jumbotron heading</h1>
-                <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-              </div-->
-
-
-
             <div >
             <div class="row">
                 <div class="col-lg-6">
@@ -61,7 +52,7 @@
                         <label class="sr-only" for="">label</label>
                         <input type="text" class="form-control" id="search" placeholder="Buscar...">
                       <span class="input-group-btn">
-                        <a id="reset" href="#" class="btn btn-info reset">Borrar</a>
+                        <a id="reset" href="#" class="btn btn-primary reset" style="background-color:blueviolet; border: blueviolet;">Borrar</a>
                       </span>
                     </div>
                   </div>
@@ -84,7 +75,7 @@
                 </div>
                 <div class="separator clear-left">
                     <p class="btn-add">
-                        <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm add" id-data="1">Agregar <span id="nbr-check" class="badge">0</span></a>
+                        <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm add" id-data="1" >Agregar <span id="nbr-check" class="badge">0</span></a>
                     </p>
                     <p class="btn-details">
                         <i class="fa fa-list"></i><a href="#" class="hidden-sm detail" data-toggle="modal" data-target="#basicModal">Descripcion</a>
@@ -102,8 +93,7 @@
                   <h4 class="modal-title" id="myModalLabel">Basic Modal</h4>
                 </div>
                 <div class="modal-body">
-                  <p>Set de Fogata es ideal para jugar al aire libre o dentro de tu casa, en pijamadas o a donde te lleve tu imaginación!!\r\n\r\nEl set incluye:\r\n✔ 3 Llamas 🔥\r\n✔ 3 Troncos\r\n✔ 4 Piedras\r\n\r\nEspecificaciones:\r\n✔ Rellena de vellón siliconado.\r\n✔ Elaborada con tela polar.\r\n✔ 100% confeccionadas a mano.\r\n✔ Aproximadamente 28 cm de Alto\r\n\r\nLos colores pueden variar según la disponibilidad de materiales en el momento de la confección.
-                  </p>
+                  <p>...</p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -116,12 +106,8 @@
     </div-->
     
 </div>
-<!--Footer--> 
-           
-              
        
         </div><!-- /.container -->
-
         
         <footer class="footer navbar-fixed-bottom">
             <div class="container">
@@ -131,8 +117,8 @@
                     </button>
 
                  <div id="demo" class="collapse">
-                     <div class="panel panel-info">
-                         <div class="panel-heading">
+                     <div class="panel panel-info" style="border-color: blueviolet;"> 
+                         <div class="panel-heading" style="background-color: #fbcaca; border-color: blueviolet;">
                          </div>
                          <div class="panel-body">
                                <div class="table-responsive">
@@ -151,10 +137,10 @@
                          </div>
                        <div class="panel-footer">
                            <div class="text-right">
-                               <button class="btn btn-default disabled" type="button">
+                               <button class="btn btn-default disabled hidden" type="button">
                                       Total estimado: $ <span id="price" class="badge">0.00</span>
                                </button>
-                               <button class="btn btn-success" onclick="sendOrder()" ><i id="enviar" class="fa fa-whatsapp" aria-hidden="true"></i> Completar pedido en WhatsApp</button>
+                               <button class="btn btn-success btn-block btn-lg" onclick="sendOrder()" ><i id="enviar" class="fa fa-whatsapp" aria-hidden="true"></i> Completar pedido en WhatsApp</button>
                            </div>
                        </div>
                    </div>

@@ -5,15 +5,10 @@ function getData() {
     
     //document.getElementById('info').innerHTML = "";
         var myTab = document.getElementById('pedido');
-     
-
         // LOOP THROUGH EACH ROW OF THE TABLE AFTER HEADER.
         for (i = 1; i < myTab.rows.length; i++) {
-
             // GET THE CELLS COLLECTION OF THE CURRENT ROW.
             var objCells = myTab.rows.item(i).cells;
-            
-
             // LOOP THROUGH EACH CELL OF THE CURENT ROW TO READ CELL VALUES.
             for (var j = 0; j < objCells.length-1; j++) {
                 if(j=1){
@@ -33,9 +28,8 @@ function getData() {
            // info.innerHTML = info.innerHTML + '<br />';     // ADD A BREAK (TAG).
             str=str+"%0a";
         }
-        str = str + "%0a Monto Total: $ "+total;
+        str = str + "%0a Monto Total: $ "+ total;
         return str;
-        //alert(str);
 }
 
 
@@ -44,9 +38,10 @@ function getData() {
 // Enviar pedido
 function sendOrder() {
  
-     //document.getElementById("purchase").innerHTML = "¡Gracias!";
+   //document.getElementById("purchase").innerHTML = "¡Gracias!";
   // Obtengo el número de WhatsApp
   var str= getData();
+
   //alert(str);
   wppNumber = '1156697764';
   // Empiezo a crear el string del link
@@ -82,7 +77,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "1650",
+            "price": "1650.00",
             "link": "https://pency.app/zula?product=605a0dc2f2e5ab000840616f",
             "image_link": "https://live.staticflickr.com/65535/51004296660_51d775864e_k.jpg",
             "brand": "Zula",
@@ -97,7 +92,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "1150",
+            "price": "1150.00",
             "link": "https://pency.app/zula?product=605a2e70ce53da00086dd083",
             "image_link": "https://lh3.googleusercontent.com/pw/ACtC-3fjYmLzLdJTTYbby-tP1NBKrnTVaXJOpcX1HH3cFVeBUa9q9RnVKiLmLytiJcVPQlP-eAhG7YNdm--1eeN8rBa759LdAFAhvOKOPKG_u4muYZwjGwWoGIEBbSMg2maPIpH590Hk9nk7RWt2QFDr5jWmUA=s657-no?authuser=0",
             "brand": "Zula",
@@ -112,7 +107,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "1800",
+            "price": "1800.00",
             "link": "https://pency.app/zula?product=605a0e52f2e5ab0008406172",
             "image_link": "https://live.staticflickr.com/65535/51072783353_cb1bbbd1c7_k.jpg",
             "brand": "Zula",
@@ -127,7 +122,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "600",
+            "price": "600.00",
             "link": "https://pency.app/zula?product=605a33a2ce53da00086dd0ab",
             "image_link": "https://live.staticflickr.com/65535/51073477156_f9f6356eeb_k.jpg",
             "brand": "Zula",
@@ -142,7 +137,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "810",
+            "price": "810.00",
             "link": "https://pency.app/zula?product=605a3431ce53da00086dd0af",
             "image_link": "https://live.staticflickr.com/65535/51073477621_0167861b61_k.jpg",
             "brand": "Zula",
@@ -157,7 +152,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "630",
+            "price": "630.00",
             "link": "https://pency.app/zula?product=605a3a00ce53da00086dd0ef",
             "image_link": "https://live.staticflickr.com/65535/51072784858_841bceb91f_k.jpg",
             "brand": "Zula",
@@ -172,7 +167,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "950",
+            "price": "950.00",
             "link": "https://pency.app/zula?product=605a10cff2e5ab0008406186",
             "image_link": "https://live.staticflickr.com/65535/51072781518_ae4802e602_k.jpg",
             "brand": "Zula",
@@ -187,7 +182,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "750",
+            "price": "750.00",
             "link": "https://pency.app/zula?product=605a353fce53da00086dd0cc",
             "image_link": "https://live.staticflickr.com/65535/51073577892_19742a4523_z.jpg",
             "brand": "Zula",
@@ -202,7 +197,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "1150",
+            "price": "1150.00",
             "link": "https://pency.app/zula?product=605a353fce53da00086dd0cc",
             "image_link": "https://live.staticflickr.com/65535/51073577892_19742a4523_z.jpg",
             "brand": "Zula",
@@ -217,7 +212,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "705",
+            "price": "705.00",
             "link": "https://pency.app/zula?product=605a3355ce53da00086dd0a7",
             "image_link": "https://live.staticflickr.com/65535/51072784113_96f7f0e493_z.jpg",
             "brand": "Zula",
@@ -232,7 +227,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "730",
+            "price": "730.00",
             "link": "https://pency.app/zula?product=605a2eb5ce53da00086dd085",
             "image_link": "https://live.staticflickr.com/65535/51004295590_77d8483aa5_z.jpg",
             "brand": "Zula",
@@ -247,7 +242,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "760",
+            "price": "760.00",
             "link": "https://pency.app/zula?product=605a361cce53da00086dd0d3",
             "image_link": "https://live.staticflickr.com/65535/51073475281_6dcbc7dbd0_z.jpg",
             "brand": "Zula",
@@ -262,7 +257,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "600",
+            "price": "600.00",
             "link": "https://pency.app/zula?product=605a3b3bb749040008b06d68",
             "image_link": "https://live.staticflickr.com/65535/51073479861_25a53f338b_z.jpg",
             "brand": "Zula",
@@ -277,7 +272,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "635",
+            "price": "635.00",
             "link": "https://pency.app/zula?product=605a3acace53da00086dd0fa",
             "image_link": "https://live.staticflickr.com/65535/51073479311_7a62b70136_z.jpg",
             "brand": "Zula",
@@ -292,7 +287,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "700",
+            "price": "700.00",
             "link": "https://pency.app/zula?product=605a3a41ce53da00086dd0f3",
             "image_link": "https://live.staticflickr.com/65535/51004294825_fc6212ecec_z.jpg",
             "brand": "Zula",
@@ -307,7 +302,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "670",
+            "price": "670.00",
             "link": "https://pency.app/zula?product=605a3ce0b749040008b06d73",
             "image_link": "https://live.staticflickr.com/65535/51004292260_d447378972_z.jpg",
             "brand": "Zula",
@@ -322,7 +317,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "790",
+            "price": "790.00",
             "link": "https://pency.app/zula?product=605a2dface53da00086dd080",
             "image_link": "https://live.staticflickr.com/65535/51004295955_182e01c13a_z.jpg",
             "brand": "Zula",
@@ -337,7 +332,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "575",
+            "price": "575.00",
             "link": "https://pency.app/zula?product=605a491bb749040008b06dcd",
             "image_link": "https://live.staticflickr.com/65535/51072785323_b52cfa74fc_z.jpg",
             "brand": "Zula",
@@ -352,7 +347,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "750",
+            "price": "750.00",
             "link": "https://pency.app/zula?product=605a3e32b749040008b06d80",
             "image_link": "https://live.staticflickr.com/65535/51072781963_ac4658528e_z.jpg",
             "brand": "Zula",
@@ -367,7 +362,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "835",
+            "price": "835.00",
             "link": "https://pency.app/zula?product=605e2de58e8bc9000858b779",
             "image_link": "https://live.staticflickr.com/65535/51073576357_4800dc5c8e_z.jpg",
             "brand": "Zula",
@@ -382,7 +377,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "820",
+            "price": "820.00",
             "link": "https://pency.app/zula?product=605a4bc9b749040008b06ddb",
             "image_link": "https://live.staticflickr.com/65535/51004296235_536d3efeec_z.jpg",
             "brand": "Zula",
@@ -397,7 +392,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "675",
+            "price": "675.00",
             "link": "https://pency.app/zula?product=605a45f8b749040008b06db8",
             "image_link": "https://live.staticflickr.com/65535/51073477031_20bb34e33e_z.jpg",
             "brand": "Zula",
@@ -412,7 +407,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "720",
+            "price": "720.00",
             "link": "https://pency.app/zula?product=605e2c5f9189160008317886",
             "image_link": "https://live.staticflickr.com/65535/51073578187_9f05635e8c_z.jpg",
             "brand": "Zula",
@@ -427,7 +422,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "820",
+            "price": "820.00",
             "link": "https://pency.app/zula?product=605e297b9189160008317863",
             "image_link": "https://live.staticflickr.com/65535/51004293430_74ba91214c_z.jpg",
             "brand": "Zula",
@@ -442,7 +437,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "1050",
+            "price": "1050.00",
             "link": "https://pency.app/zula?product=605a0fbcf2e5ab0008406181",
             "image_link": "https://live.staticflickr.com/65535/51072779983_6e66fec1af_z.jpg",
             "brand": "Zula",
@@ -457,7 +452,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "1880",
+            "price": "1880.00",
             "link": "https://pency.app/zula?product=605a47b8b749040008b06dc8",
             "image_link": "https://live.staticflickr.com/65535/51072778113_7c73e8a5cb_z.jpg",
             "brand": "Zula",
@@ -472,7 +467,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "900",
+            "price": "900.00",
             "link": "https://pency.app/zula?product=605e2e978e8bc9000858b781",
             "image_link": "https://live.staticflickr.com/65535/51073473881_3cf23c9bf1_z.jpg",
             "brand": "Zula",
@@ -487,7 +482,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "575",
+            "price": "575.00",
             "link": "https://pency.app/zula?product=605a4ce9b749040008b06de8",
             "image_link": "https://live.staticflickr.com/65535/51073582422_eec271d669_z.jpg",
             "brand": "Zula",
@@ -502,7 +497,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "710",
+            "price": "710.00",
             "link": "https://pency.app/zula?product=605e0db44790cb0008c79f2c",
             "image_link": "https://live.staticflickr.com/65535/51073477321_9056ebb228_z.jpg",
             "brand": "Zula",
@@ -517,7 +512,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "755",
+            "price": "755.00",
             "link": "https://pency.app/zula?product=605a3fb1b749040008b06d8c",
             "image_link": "https://live.staticflickr.com/65535/51072779528_0393a20a9d_z.jpg",
             "brand": "Zula",
@@ -532,7 +527,7 @@ $(document).ready(function () {
             "availability": "in stock",
             "inventory": "100",
             "condition": "new",
-            "price": "700",
+            "price": "700.00",
             "link": "https://pency.app/zula?product=605a466cb749040008b06dbc",
             "image_link": "https://live.staticflickr.com/65535/51073473536_0f521a30d3_z.jpg",
             "brand": "Zula",
