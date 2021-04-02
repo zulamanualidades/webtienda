@@ -5,6 +5,12 @@ function getData() {
     
     //document.getElementById('info').innerHTML = "";
         var myTab = document.getElementById('pedido');
+        
+    if(myTab.rows.length == 1){
+        
+        return str;
+    }
+
         // LOOP THROUGH EACH ROW OF THE TABLE AFTER HEADER.
         for (i = 1; i < myTab.rows.length; i++) {
             // GET THE CELLS COLLECTION OF THE CURRENT ROW.
@@ -41,6 +47,12 @@ function sendOrder() {
    //document.getElementById("purchase").innerHTML = "¡Gracias!";
   // Obtengo el número de WhatsApp
   var str= getData();
+
+  if (str==""){
+      
+      bootbox.alert("Pedido Vacío");
+      return;
+  }
 
   //alert(str);
   wppNumber = '1156697764';
