@@ -554,7 +554,8 @@ $(document).ready(function () {
     var i = 0;
          arrLen = arr.length - 1,
          str = "";
-        
+        // <div class="col-xs-6 col-md-3">
+//col-sm-3 filter .... col-md-6
     // loop through all elements in the array, building a form for each object
     for (; i <= arrLen; i++ ) {
         //alert(arr[i].title);
