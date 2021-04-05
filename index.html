@@ -7,7 +7,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="cart shopping">
         <meta name="author" content="Pristou@dev">
-        <title>**Shopping Cart**</title>
+        <title>Zula Manualidades</title>
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">        
@@ -25,19 +25,8 @@
         <![endif]-->
     </head>
     <body>
-             <div class="row fixed-top" style="position:fixed;padding-top:5px; padding-left:7px;padding-right:7px;z-index:100;background-color:white;padding-bottom:5px">
-                <div class="col-lg-6">
-                    <div class="input-group">
-                        <label class="sr-only" for="">label</label>
-                        <input type="text" class="form-control" id="search" placeholder="Buscar...">
-                      <span class="input-group-btn">
-                        <a id="reset" href="#" class="btn btn-primary reset" style="background-color:blueviolet; border: blueviolet;">Borrar</a>
-                      </span>
-                    </div>
-                  </div>
-            </div>
-
-        <div style="padding-top:45px;"   >
+            
+        <div>
             <div class="jumbotron text-center jumbotron-billboard">
                 <div class="img"></div>
                   <div class="container">
@@ -51,66 +40,55 @@
                       </div>
                   </div>
               </div>
-
         </div>
-
-        <div class="container" style="padding-top:10px;padding-bottom:70px;">
-
-
-            
-            
-            
-           
-
- <!--all products-->
- <div id="products" class="row mas">
-    <!--div class="col-sm-3 filter">
-        <div class="col-item">
-            <div class="photo">                            
-                <img src="https://live.staticflickr.com/65535/51004296660_51d775864e_k.jpg" class="img-responsive" alt="a" />
-            </div>
-            <div class="info">
-                <div class="row">
-                    <div class="price col-md-6">
-                        <h4 class="name_product"><span>Simple Product</span></h4>
-                        <h5 class="price-text-color price-u">199.99</h5>
-                    </div>
-                </div>
-                <div class="separator clear-left">
-                    <p class="btn-add">
-                        <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm add" id-data="1" >Agregar <span id="nbr-check" class="badge">0</span></a>
-                    </p>
-                    <p class="btn-details">
-                        <i class="fa fa-list"></i><a href="#" class="hidden-sm detail" data-toggle="modal" data-target="#basicModal">Descripcion</a>
-                    </p>
-                </div>
-                <div class="clearfix">
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <h4 class="modal-title" id="myModalLabel">Basic Modal</h4>
-                </div>
-                <div class="modal-body">
-                  <p>...</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary" >Save changes</button>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-    </div-->
+        
+          
     
-</div>
-       
-        </div><!-- /.container -->
+
+    <div class="container">
+        <!--div style="position:fixed;padding-top:5px; padding-left:7px;padding-right:7px;z-index:100;background-color:white;padding-bottom:5px"-->
+        
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Categorías
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#didacticos">Juguetes Didácticos</a></li>
+              <li><a href="#comiditas">Comiditas de Tela</a></li>
+              <li><a href="#muñecos">Munec@s</a></li>
+              
+            </ul>
+          </div>
+            <div class="input-group">
+                <label class="sr-only" for="">label</label>
+                <input type="text" class="form-control" id="search" placeholder="Buscar...">
+              <span class="input-group-btn">
+                <a id="reset" href="#" class="btn btn-primary reset" style="background-color:blueviolet; border: blueviolet;">Borrar</a>
+              </span>
+            </div>
+
+          
+
+              
+    </div>
+
+
+ <div class="container" style="padding-bottom:10px;">
+
+
+    <div id="productsDidacticos" class="row mas"></div>
+</div><!-- /.container productsDidacticos -->
+
+<div class="container" style="padding-bottom:10px;">
+    <div id="productsComiditas" class="row mas"></div>
+</div><!-- /.container productsComiditas -->
+
+
+<div class="container" style="padding-bottom:70px;">
+    <div id="productsMuñecos" class="row mas"></div>
+</div><!-- /.container productsMuñecos -->
+
         
         <footer class="footer navbar-fixed-bottom">
             <div class="container">
@@ -152,7 +130,7 @@
                  </div>
              </div>
                <!--end cart shopping-->
-            </div>
+            
           </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
