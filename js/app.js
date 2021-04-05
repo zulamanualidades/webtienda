@@ -567,7 +567,7 @@ $(document).ready(function () {
     +'        </div>'
     +'        <div class="info">'
     +'            <div class="row">'
-    +'               <div class="price col-md-6"">'
+    +'               <div class="price col-6 col-md-4"">'
     +'                    <h4 class="name_product"><span>'+arr[i].title+'</span></h4>'
     +'           <h5 style="text-align:left;float:left;" class="price-text-color">$&nbsp;</h5><h5 class="price-text-color price-u">'+arr[i].price+'</h5>'
     +'                </div>'
