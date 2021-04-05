@@ -560,7 +560,7 @@ $(document).ready(function () {
     for (; i <= arrLen; i++ ) {
         //alert(arr[i].title);
     str = str + 
-    '<div class="col-6 filter">'
+    '<div class="col-6 col-md-4 filter">'
     +'    <div class="col-item">'
     +'        <div class="photo">'
     +'            <img src="'+ arr[i].image_link+'" class="img-responsive" alt="a" />'
