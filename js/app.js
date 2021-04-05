@@ -560,14 +560,14 @@ $(document).ready(function () {
     for (; i <= arrLen; i++ ) {
         //alert(arr[i].title);
     str = str + 
-    '<div class="col-sm-3 filter">'
+    '<div class="col-6 filter">'
     +'    <div class="col-item">'
     +'        <div class="photo">'
     +'            <img src="'+ arr[i].image_link+'" class="img-responsive" alt="a" />'
     +'        </div>'
     +'        <div class="info">'
     +'            <div class="row">'
-    +'               <div class="price col-6 col-md-4"">'
+    +'               <div class="price col-md-4"">'
     +'                    <h4 class="name_product"><span>'+arr[i].title+'</span></h4>'
     +'           <h5 style="text-align:left;float:left;" class="price-text-color">$&nbsp;</h5><h5 class="price-text-color price-u">'+arr[i].price+'</h5>'
     +'                </div>'
