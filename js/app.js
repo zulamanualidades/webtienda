@@ -174,8 +174,8 @@ str = str +
 +'        </div>'
 +'      </div>';
 };
-var strCatgory = '<h2 id="comiditas" sytle="padding-left:10px;">Comiditas de Tela</h2>'
-//$("#products").html(strCatgory+str);
+var strCatgory = '<h2 style="margin-left: 15px;" id="comiditas">Comiditas de Tela</h2>'
+
 return strCatgory+str;
 }
 
@@ -300,7 +300,7 @@ function loadProductJuguetesDidacticos(){
     +'        </div>'
     +'      </div>';
     };
-    var strCatgory = '<h2 id="didacticos">Juguetes Didácticos</h2>'
+    var strCatgory = '<h2 style="margin-left: 15px;" id="didacticos">Juguetes Didácticos</h2>'
     //$("#products").html(strCatgory+str);
     return strCatgory+str;
     }
@@ -427,7 +427,7 @@ function loadProductMuñecos(){
         +'        </div>'
         +'      </div>';
         };
-        var strCatgory = '<h2 id="muñecos">Muñec@s</h2>'
+        var strCatgory = '<h2 style="margin-left: 15px;" id="muñecos">Muñec@s</h2>'
       
         return strCatgory+str;
         }
