@@ -552,7 +552,7 @@ loadAll();
                     '<td class="id_category hidden" data-category="'+ category +'" ></td> '+
                     '<td class="nom">'+add.parent().parent().parent().find('.name_product').text()+'</td>'+
                     '<td class="quantite hidden" >'+ q +'</td>'+
-                    '<td class="qte"><button id="reduce" class="btn btn-warning btn-sm plusmoin btn-raised"><em class="fa fa-minus"></em></button><span class="quantite"> '+ q +'&nbsp;</span><button id="addQ" class="btn btn-info btn-sm plusmoin btn-raised"><em class="fa fa-plus"></em></button> </td>'+
+                    '<td class="qte"><button id="reduce" class="btn btn-info btn-sm plusmoin btn-raised btn-circle"><em class="fa fa-minus"></em></button><span class="quantite"> '+ q +'&nbsp;</span><button id="addQ" class="btn btn-info btn-sm plusmoin btn-raised btn-circle"><em class="fa fa-plus"></em></button> </td>'+
                     '<td class="total">'+add.parent().parent().parent().find('.price-u').text()+'</td>'+
                     '<td class="prix hidden">'+add.parent().parent().parent().find('.price-u').text()+'</td>'+
                     
