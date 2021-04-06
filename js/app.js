@@ -448,7 +448,7 @@ function getData() {
     
     //document.getElementById('info').innerHTML = "";
         var myTab = document.getElementById('pedido');
-        
+       
     if(myTab.rows.length == 1){
         
         return str;
@@ -459,16 +459,17 @@ function getData() {
             // GET THE CELLS COLLECTION OF THE CURRENT ROW.
             var objCells = myTab.rows.item(i).cells;
             // LOOP THROUGH EACH CELL OF THE CURENT ROW TO READ CELL VALUES.
+            
             for (var j = 0; j < objCells.length-1; j++) {
-                if(j=1){
+                if(j=2){
                   //  info.innerHTML = info.innerHTML + ' ' + objCells.item(j).innerHTML;
                   str = str + '- ' + objCells.item(j).innerHTML;
                 }
-                if(j=2){
+                if(j=3){
                     //info.innerHTML = info.innerHTML + ' - Cantidad ' + objCells.item(j).innerHTML;
                     str = str + '  > Cantidad ' + objCells.item(j).innerHTML;
                 }
-                if(j=4){
+                if(j=5){
                     //info.innerHTML = info.innerHTML + ' - Total: $ ' + objCells.item(j).innerHTML;
                     total=total+parseFloat(objCells.item(j).innerHTML);
                     str = str + ' > Total: $ ' + objCells.item(j).innerHTML;
@@ -478,27 +479,23 @@ function getData() {
             str=str+"%0a";
         }
         str = str + "%0a Monto Total: $ "+ total;
+      
         return str;
 }
 
 
 // Enviar pedido
 function sendOrder() {
- 
    //document.getElementById("purchase").innerHTML = "¡Gracias!";
   // Obtengo el número de WhatsApp
   var str= getData();
-
   if (str==""){
-      
       bootbox.alert("Pedido Vacío");
       return;
   }
-
   //alert(str);
   wppNumber = '1156697764';
   // Empiezo a crear el string del link
-
   link =
     "https://api.whatsapp.com/send?phone=549" +
     wppNumber +
