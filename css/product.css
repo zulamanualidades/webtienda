@@ -35,7 +35,7 @@
 
 .jumbotron-billboard .img {
     margin-bottom: 0px;
-    opacity: 0.2;
+    opacity: 0.4;
     color: #fff;
     background: #000 url("../img/portada_pency.jpg") top center no-repeat;
     width: 100%;
@@ -46,6 +46,7 @@
     top:0;
     left:0;
     z-index:1;    
+    background-position:center;
 
 }
 .jumbotron h2 {margin-top:0;}
