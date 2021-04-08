@@ -130,32 +130,25 @@ str = "";
 // loop through all elements in the array, building a form for each object
 for (; i <= arrLen; i++ ) {
     //alert(arr[i].title);
+
 str = str + 
-'<div class="col-6 col-md-4 filter">'
-+'    <div class="col-item">'
-+'        <div class="photo">'
-+'            <img src="'+ arr[i].image_link+'" class="img-responsive" alt="a" />'
-+'        </div>'
-+'        <div class="info">'
-+'            <div class="row">'
-+'               <div class="price col-md-4"">'
-+'                    <h4 class="name_product"><span>'+arr[i].title+'</span></h4>'
-+'           <h5 style="text-align:left;float:left;" class="price-text-color">$&nbsp;</h5><h5 class="price-text-color price-u">'+arr[i].price+'</h5>'
-+'                </div>'
-+'           </div>'
-+'           <div class="separator clear-left">'
-+'               <p class="btn-add">'
-+'                   <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm add" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'">Agregar <span id="nbr-check" class="badge">0</span></a>'
-+'               </p>'
-+'               <p class="btn-details">'
-+'                    <i class="fa fa-list"></i><a href="#" class="hidden-sm detail" data-toggle="modal" data-target="#'+arr[i].id+'">Descripcion</a>'
-+'               </p>'
-+'           </div>'
-+'           <div class="clearfix">'
-+'           </div>'
-+'       </div>'
+
+'<div class="col-xs-6 col-md-3">'
++'   <div class="thumbnail" style="border: 0px" >'
++'     <img src="'+ arr[i].image_link+'" class="img-responsive" alt="a" >'
++'     <button class="btn btn-link hidden-sm detail btn-block" data-toggle="modal" data-target="#'+arr[i].id+'"><i class="fa fa-list"></i> Ver Detalle</button>'
++'     <div class="info">'
++'         <h5 class="name_product titleProduct"><span>'+arr[i].title+'</span></h5>'
++'         <div>'
++'             <div class="v"><h5 class="price-text-color">$ </h5></div>'
++'             <div class="vk"><h5 class="price-text-color price-u">'+arr[i].price+'</h5></div>'
++'         </div>'
++'       <button class="btn btn-secondary hidden-sm add btn-block" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar <span id="nbr-check" class="badge">0</span></button>'
++'     </div>'
 +'   </div>'
-+'</div>'
++'   <div class="clearfix"></div>'
++' </div>'
+
 +'<div class="modal fade" id="'+arr[i].id+'" tabindex="-1" role="document" aria-labelledby="basicModal" aria-hidden="true">'
 +'        <div class="modal-dialog">'
 +'          <div class="modal-content">'
@@ -257,32 +250,25 @@ function loadProductJuguetesDidacticos(){
     // loop through all elements in the array, building a form for each object
     for (; i <= arrLen; i++ ) {
         //alert(arr[i].title);
+  
     str = str + 
-    '<div class="col-6 col-md-4 filter">'
-    +'    <div class="col-item">'
-    +'        <div class="photo">'
-    +'            <img src="'+ arr[i].image_link+'" class="img-responsive" alt="a" />'
-    +'        </div>'
-    +'        <div class="info">'
-    +'            <div class="row">'
-    +'               <div class="price col-md-4"">'
-    +'                    <h4 class="name_product"><span>'+arr[i].title+'</span></h4>'
-    +'           <h5 style="text-align:left;float:left;" class="price-text-color">$&nbsp;</h5><h5 class="price-text-color price-u">'+arr[i].price+'</h5>'
-    +'                </div>'
-    +'           </div>'
-    +'           <div class="separator clear-left">'
-    +'               <p class="btn-add">'
-    +'                   <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm add" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'">Agregar <span id="nbr-check" class="badge">0</span></a>'
-    +'               </p>'
-    +'               <p class="btn-details">'
-    +'                    <i class="fa fa-list"></i><a href="#" class="hidden-sm detail" data-toggle="modal" data-target="#'+arr[i].id+'">Descripcion</a>'
-    +'               </p>'
-    +'           </div>'
-    +'           <div class="clearfix">'
-    +'           </div>'
-    +'       </div>'
-    +'   </div>'
-    +'</div>'
+
+    '<div class="col-xs-6 col-md-3">'
+   +'   <div class="thumbnail" style="border: 0px" >'
+   +'     <img src="'+ arr[i].image_link+'" class="img-responsive" alt="a" >'
+   +'     <button class="btn btn-link hidden-sm detail btn-block" data-toggle="modal" data-target="#'+arr[i].id+'"><i class="fa fa-list"></i> Ver Detalle</button>'
+   +'     <div class="info">'
+   +'         <h5 class="name_product titleProduct"><span>'+arr[i].title+'</span></h5>'
+   +'         <div>'
+   +'             <div class="v"><h5 class="price-text-color">$ </h5></div>'
+   +'             <div class="vk"><h5 class="price-text-color price-u">'+arr[i].price+'</h5></div>'
+   +'         </div>'
+   +'       <button class="btn btn-secondary hidden-sm add btn-block" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar <span id="nbr-check" class="badge">0</span></button>'
+   +'     </div>'
+   +'   </div>'
+   +'   <div class="clearfix"></div>'
+   +' </div>'
+  
     +'<div class="modal fade" id="'+arr[i].id+'" tabindex="-1" role="document" aria-labelledby="basicModal" aria-hidden="true">'
     +'        <div class="modal-dialog">'
     +'          <div class="modal-content">'
@@ -396,7 +382,7 @@ function loadProductMuñecos(){
        +'             <div class="v"><h5 class="price-text-color">$ </h5></div>'
        +'             <div class="vk"><h5 class="price-text-color price-u">'+arr[i].price+'</h5></div>'
        +'         </div>'
-       +'       <button class="btn btn-primary hidden-sm add btn-block" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar <span id="nbr-check" class="badge">0</span></button>'
+       +'       <button class="btn btn-secondary hidden-sm add btn-block" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar <span id="nbr-check" class="badge">0</span></button>'
        +'     </div>'
        +'   </div>'
        +'   <div class="clearfix"></div>'
@@ -430,8 +416,8 @@ function loadAll(){
     var strComiditas = loadProductComiditas();
     var strDidacticos= loadProductJuguetesDidacticos();
     var strMuñecos = loadProductMuñecos();
-    //$("#productsDidacticos").html(strDidacticos);
-    //$("#productsComiditas").html(strComiditas);
+    $("#productsDidacticos").html(strDidacticos);
+    $("#productsComiditas").html(strComiditas);
     $("#productsMuñecos").html(strMuñecos);
 }
 
