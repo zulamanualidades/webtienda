@@ -387,11 +387,11 @@ function loadProductMuñecos(){
         str = str + 
 
         '<div class="col-xs-6 col-md-3">'
-       +'   <div class="thumbnail">'
+       +'   <div class="thumbnail" style="border: 0px" >'
        +'     <img src="'+ arr[i].image_link+'" class="img-responsive" alt="a" >'
        +'     <button class="btn btn-link hidden-sm detail btn-block" data-toggle="modal" data-target="#'+arr[i].id+'"><i class="fa fa-list"></i> Ver Detalle</button>'
        +'     <div class="info">'
-       +'         <h4 class="name_product titleProduct"><span>'+arr[i].title+'</span></h4>'
+       +'         <h5 class="name_product titleProduct"><span>'+arr[i].title+'</span></h5>'
        +'         <div>'
        +'             <div class="v"><h5 class="price-text-color">$ </h5></div>'
        +'             <div class="vk"><h5 class="price-text-color price-u">'+arr[i].price+'</h5></div>'
