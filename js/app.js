@@ -385,7 +385,8 @@ function loadProductMuñecos(){
         for (; i <= arrLen; i++ ) {
             //alert(arr[i].title);
         str = str + 
-        '<div class="col-6 col-md-4 filter">'
+        
+        '<div class="col-xs-6 col-sm-4">'
         +'    <div class="col-item">'
         +'        <div class="photo">'
         +'            <img src="'+ arr[i].image_link+'" class="img-responsive" alt="a" />'
@@ -438,8 +439,8 @@ function loadAll(){
     var strComiditas = loadProductComiditas();
     var strDidacticos= loadProductJuguetesDidacticos();
     var strMuñecos = loadProductMuñecos();
-    $("#productsDidacticos").html(strDidacticos);
-    $("#productsComiditas").html(strComiditas);
+    //$("#productsDidacticos").html(strDidacticos);
+    //$("#productsComiditas").html(strComiditas);
     $("#productsMuñecos").html(strMuñecos);
 }
 
