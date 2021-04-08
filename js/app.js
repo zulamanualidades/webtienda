@@ -386,7 +386,7 @@ function loadProductMuñecos(){
             //alert(arr[i].title);
         str = str + 
         
-        '<div class="col-md-6 col-sm-4">'
+        '<div class="col-xs-6 col-sm-4 no-gutters">'
         +'    <div class="col-item">'
         +'        <div class="photo">'
         +'            <img src="'+ arr[i].image_link+'" class="img-responsive" alt="a" />'
