@@ -403,7 +403,7 @@ function loadProductMuñecos(){
         +'                   <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm add" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'">Agregar <span id="nbr-check" class="badge">0</span></a>'
         +'               </p>'
         +'               <p class="btn-details">'
-        +'                    <i class="fa fa-list"></i><a href="#" class="hidden-sm detail" data-toggle="modal" data-target="#'+arr[i].id+'">Descripcion</a>'
+        +'                    <i class="fa fa-list"></i><a href="#" class="hidden-sm detail" data-toggle="modal" data-target="#'+arr[i].id+'">Info</a>'
         +'               </p>'
         +'           </div>'
         +'           <div class="clearfix">'
