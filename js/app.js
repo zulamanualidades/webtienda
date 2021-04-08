@@ -446,12 +446,12 @@ function getData() {
                 }
                 if(j=3){
                     //info.innerHTML = info.innerHTML + ' - Cantidad ' + objCells.item(j).innerHTML;
-                    str = str + '  > Cantidad ' + objCells.item(j).innerHTML;
+                    str = str + '  → Cantidad ' + objCells.item(j).innerHTML;
                 }
                 if(j=5){
                     //info.innerHTML = info.innerHTML + ' - Total: $ ' + objCells.item(j).innerHTML;
                     total=total+parseFloat(objCells.item(j).innerHTML);
-                    str = str + ' > Total: $ ' + objCells.item(j).innerHTML;
+                    str = str + ' → Total: $ ' + objCells.item(j).innerHTML;
                 }
             }
            // info.innerHTML = info.innerHTML + '<br />';     // ADD A BREAK (TAG).
