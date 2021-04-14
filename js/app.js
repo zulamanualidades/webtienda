@@ -21,7 +21,7 @@ str = str +
 +'     <div class="info">'
 +'         <h5 class="name_product titleProduct"><span>'+arr[i].title+'</span></h5>'
 +'         <div>'
-+'              <div class="v tachado"><h5>$'+arr[i].discount+'</h5></div>'    
++'              <div class="v tachado"><h5>'+arr[i].discount+'</h5></div>'    
 +'              <div class="vk"><h5 class="price-text-color price-u">$&nbsp;'+arr[i].price+'</h5></div>'
 +'         </div>'
 +'       <button class="btn btn-secondary hidden-sm add btn-block" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar <span id="nbr-check" class="badge">0</span></button>'
