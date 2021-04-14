@@ -1,11 +1,19 @@
 .titleProduct{
-    Text-align:center;
+    Text-align:left;
     font-weight: bold;
 }
 
+.price-text-color
+{
+    color:green;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
 .v {
-    width:40%;
-    Text-align:right;
+    width:75%;
+    Text-align:left;
     float:left;
 }
 
@@ -13,7 +21,7 @@
 .vk
     {
     Text-align:left;
-    Width:60%;
+    Width:25%;
     float:right;
     
     }
@@ -23,13 +31,11 @@
 
     text-decoration:line-through;
     color:grey;
+    Text-align:center;
+    display:block;
     
 }
 
-.centro{
-
-    Text-align:center;
-}
 
 .navbar {
   /*  -webkit-box-shadow: 0 8px 6px -6px #999;
@@ -126,7 +132,7 @@ pre {
 
 .col-item
 {
-    border: 1px solid #E1E1E1;
+    
     border-radius: 5px;
     background: #FFF;
     margin-bottom: 10px;
@@ -171,12 +177,7 @@ pre {
     font-weight: bold;
 }
 
-.price-text-color
-{
-    color:green;
-    font-weight: bold;
 
-}
 
 .col-item .info .rating
 {

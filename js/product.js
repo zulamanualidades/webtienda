@@ -6,7 +6,7 @@ var arrComiditas = [
         "price": "790.00",
         "image_link": "https://live.staticflickr.com/65535/51004295955_182e01c13a_z.jpg",
         "category": "Comiditas",
-        "discount": "200"
+        "discount": "10%"
     },
     {
         "id": "ZULA_019",
