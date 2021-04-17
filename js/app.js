@@ -1,85 +1,41 @@
-
-function loadProductComiditas(){
+function loadProduct(arr,strId,strLabel){
 //https://beautifytools.com/excel-to-json-converter.php excel to json
 
-var arr = arrComiditas;
-var i = 0;
-arrLen = arr.length - 1,
-str = "";
-
-// loop through all elements in the array, building a form for each object
-for (; i <= arrLen; i++ ) {
-    //alert(arr[i].title);
-
-str = str + 
-
-'<div class="col-xs-6 col-md-3">'
-+' <div class="thumbnail" style="border: 0px" >'
-+'  <div class="ribbon"><span>'+arr[i].discount +'</span></div>'
-+'     <img src="'+ arr[i].image_link+'" class="img-responsive" alt="a" >'
-+'     <button class="btn btn-link hidden-sm detail btn-block" data-toggle="modal" data-target="#'+arr[i].id+'"><i class="fa fa-list"></i> Ver Detalle</button>'
-+'         <div class="tachado"><h5>&nbsp'+arr[i].discount+'</h5></div>'    
-+'         <h5 class="v name_product titleProduct"><span>'+arr[i].title+'</span></h5>'
-+'         <h5 class="vk price-text-color price-u">$&nbsp;'+arr[i].price+'</h5>'
-+'       <button class="btn btn-secondary hidden-sm add btn-block" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar <span id="nbr-check" class="badge">0</span></button>'
-+'   </div>'
-+'   <div class="clearfix"></div>'
-+' </div>'
-
-+'<div class="modal fade" id="'+arr[i].id+'" tabindex="-1" role="document" aria-labelledby="basicModal" aria-hidden="true">'
-+'        <div class="modal-dialog">'
-+'          <div class="modal-content">'
-+'            <div class="modal-header">'
-+'              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>'
-+'              <h4 class="modal-title" id="myModalLabel">'+arr[i].title+'</h4>'
-+'            </div>'
-+'            <div class="modal-body">'
-+'              <pre>'+arr[i].description
-+'              </pre>'
-+'            </div>'
-+'            <div class="modal-footer">'
-+'              <button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>'
-+'            </div>'
-+'          </div>'
-+'        </div>'
-+'      </div>';
-};
-
-var strCatgory = '<h2 style="margin-left: 15px;" id="comiditas">Comiditas de Tela ('+i+')</h2>'
-
-return strCatgory+str;
-}
-
-function loadProductJuguetesDidacticos(){
-    //https://beautifytools.com/excel-to-json-converter.php excel to json
-    var arr= arrDidacticos;
-    
     var i = 0;
     arrLen = arr.length - 1,
     str = "";
+    var strClass = "";
     
-    // loop through all elements in the array, building a form for each object
     for (; i <= arrLen; i++ ) {
-        //alert(arr[i].title);
-  
-    str = str + 
+     
+    if(arr[i].discount == "0"){
+      strClass = "";     
+      arr[i].price_tachado = "";
+      arr[i].discount = "";
+    }else{
+        strClass = "tachado";
+       
+    }
 
+    str = str + 
+    
     '<div class="col-xs-6 col-md-3">'
-   +'   <div class="thumbnail" style="border: 0px" >'
-   +'     <img src="'+ arr[i].image_link+'" class="img-responsive" alt="a" >'
-   +'     <button class="btn btn-link hidden-sm detail btn-block" data-toggle="modal" data-target="#'+arr[i].id+'"><i class="fa fa-list"></i> Ver Detalle</button>'
-   +'     <div class="info">'
-   +'         <h5 class="name_product titleProduct"><span>'+arr[i].title+'</span></h5>'
-   +'         <div>'
-   +'             <div class="v"><h5 class="price-text-color">$ </h5></div>'
-   +'             <div class="vk"><h5 class="price-text-color price-u">'+arr[i].price+'</h5></div>'
-   +'         </div>'
-   +'       <button class="btn btn-secondary hidden-sm add btn-block" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar <span id="nbr-check" class="badge">0</span></button>'
-   +'     </div>'
-   +'   </div>'
-   +'   <div class="clearfix"></div>'
-   +' </div>'
-  
+    +' <div class="thumbnail" style="border: 0px" >'
+    +'  <div class="ribbon"><span>'+arr[i].discount +'</span></div>'
+    +'     <img src="'+ arr[i].image_link+'" class="img-responsive" alt="a" >'
+    +'     <button class="btn btn-link hidden-sm detail btn-block" data-toggle="modal" data-target="#'+arr[i].id+'"><i class="fa fa-list"></i> Ver Detalle</button>'
+    +'     <div class="info">'
+    +'         <div>'
+    +'         <h5 class="name_product titleProduct"><span>'+arr[i].title+'</span></h5>'
+    +'         <h5 class='+ strClass+'>'+arr[i].price_tachado+'&nbsp</h5>'    
+    +'         <h5 class="price-text-color price-u">$&nbsp;'+arr[i].price+'</h5>'
+    +'         </div>'
+    +'       <button class="btn btn-secondary hidden-sm add btn-block" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar <span id="nbr-check" class="badge">0</span></button>'
+    +'      </div>'
+    +'   </div>'
+    +'   <div class="clearfix"></div>'
+    +' </div>'
+    
     +'<div class="modal fade" id="'+arr[i].id+'" tabindex="-1" role="document" aria-labelledby="basicModal" aria-hidden="true">'
     +'        <div class="modal-dialog">'
     +'          <div class="modal-content">'
@@ -98,67 +54,19 @@ function loadProductJuguetesDidacticos(){
     +'        </div>'
     +'      </div>';
     };
-    var strCatgory = '<h2 style="margin-left: 15px;" id="didacticos">Juguetes Didácticos ('+i+')</h2>'
+    
+    var strCatgory = '<h2 style="margin-left: 15px;" id="'+strId+'">'+ strLabel +' ('+i+')</h2>'
+    
     return strCatgory+str;
-    }
-
-function loadProductMuñecos(){
-        //https://beautifytools.com/excel-to-json-converter.php excel to json
-        var arr= arrMuñecos;
-        
-        var i = 0;
-        arrLen = arr.length - 1,
-        str = "";
-        
-        // loop through all elements in the array, building a form for each object
-        for (; i <= arrLen; i++ ) {
-            //alert(arr[i].title);
-        str = str + 
-
-        '<div class="col-xs-6 col-md-3">'
-       +'   <div class="thumbnail" style="border: 0px" >'
-       +'     <img src="'+ arr[i].image_link+'" class="img-responsive" alt="a" >'
-       +'     <button class="btn btn-link hidden-sm detail btn-block" data-toggle="modal" data-target="#'+arr[i].id+'"><i class="fa fa-list"></i> Ver Detalle</button>'
-       +'     <div class="info">'
-       +'         <h5 class="name_product titleProduct"><span>'+arr[i].title+'</span></h5>'
-       +'         <div>'
-       +'             <div class="v"><h5 class="price-text-color">$ </h5></div>'
-       +'             <div class="vk"><h5 class="price-text-color price-u">'+arr[i].price+'</h5></div>'
-       +'         </div>'
-       +'       <button class="btn btn-secondary hidden-sm add btn-block" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar <span id="nbr-check" class="badge">0</span></button>'
-       +'     </div>'
-       +'   </div>'
-       +'   <div class="clearfix"></div>'
-       +' </div>'
-      
-        +'<div class="modal fade" id="'+arr[i].id+'" tabindex="-1" role="document" aria-labelledby="basicModal" aria-hidden="true">'
-        +'        <div class="modal-dialog">'
-        +'          <div class="modal-content">'
-        +'            <div class="modal-header">'
-        +'              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>'
-        +'              <h4 class="modal-title" id="myModalLabel">'+arr[i].title+'</h4>'
-        +'            </div>'
-        +'            <div class="modal-body">'
-        +'              <pre>'+arr[i].description
-        +'              </pre>'
-        +'            </div>'
-        +'            <div class="modal-footer">'
-        +'              <button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>'
-        +'            </div>'
-        +'          </div>'
-        +'        </div>'
-        +'      </div>';
-        };
-        var strCatgory = '<h2 style="margin-left: 15px;" id="muñecos">Muñec@s ('+i+')</h2>'
-      
-        return strCatgory+str;
-        }
+}
 
 
 function loadAll(){
-    var strComiditas = loadProductComiditas();
-    var strDidacticos= loadProductJuguetesDidacticos();
-    var strMuñecos = loadProductMuñecos();
+    
+    var strComiditas = loadProduct(arrComiditas,"comiditas","Comiditas de Tela");
+    var strDidacticos = loadProduct(arrDidacticos,"didacticos","Juguetes Didácticos");
+    var strMuñecos = loadProduct(arrMuñecos,"muñecos","Muñec@s");
+
     $("#productsDidacticos").html(strDidacticos);
     $("#productsComiditas").html(strComiditas);
     $("#productsMuñecos").html(strMuñecos);
@@ -167,12 +75,10 @@ function loadAll(){
 function getData() {
     var str="";
     var total=0;
-    
-    //document.getElementById('info').innerHTML = "";
-        var myTab = document.getElementById('pedido');
+
+    var myTab = document.getElementById('pedido');
        
     if(myTab.rows.length == 1){
-        
         return str;
     }
 
@@ -208,34 +114,22 @@ function getData() {
 
 // Enviar pedido
 function sendOrder() {
-   //document.getElementById("purchase").innerHTML = "¡Gracias!";
-  // Obtengo el número de WhatsApp
+
   var str= getData();
   if (str==""){
       bootbox.alert("Pedido Vacío");
       return;
   }
-  //alert(str);
   wppNumber = '1156697764';
-  // Empiezo a crear el string del link
   link =
     "https://api.whatsapp.com/send?phone=549" +
     wppNumber +
     "&text=¡Hola! Te quiero hacer un pedido%0a";
-  // Concatenar productos y cantidades
-  /*for (let item of order) {
-    if (item.cant > 0) {
-      link += item.product + "  x" + item.cant + "%0a";
-    }
-  }*/
-  // Concatenar monto total
+ 
   link += str;
-  // Datos extra
-  //link += "%0aMi nombre es %0aMi dirección es ";
   window.open(link);
     
   }
-
 
 $(document).ready(function () {
     
@@ -256,6 +150,7 @@ loadAll();
         // Retrieve the product ID 
         var id_product = add.attr('id-data');
         var category = add.attr('data-category');
+
         //alert (category);
         //Retrieve the number of times is the selected product
         var checked=add.parent().parent().parent().find('#nbr-check');
@@ -264,9 +159,11 @@ loadAll();
         if($.inArray(id_product,tab_panier)==-1){
             // If the product does not exist in the shopping cart, than add it to the shopping cart
             tab_panier.push(id_product);
+
+           // alert(add.parent().parent().parent().find('.price-u').text());
             
-            //alert();
-            var price = add.parent().parent().parent().find('.price-u').text().substring(2)
+            var price = add.parent().parent().parent().find('.price-u').text().substring(2);
+           
            var q=1;
            var tr=
                 '<tr id="ligne">' +

@@ -1,5 +1,5 @@
 .titleProduct{
-    Text-align:left;
+    Text-align:center;
     font-weight: bold;
 }
 
@@ -8,6 +8,7 @@
     color:green;
     font-weight: bold;
     font-size: 15px;
+    Text-align:center;
 
 }
 
@@ -25,6 +26,21 @@
     float:right;
     
     }
+
+    .izq {
+        width:10%;
+        Text-align:left;
+        float:left;
+    }
+    
+    
+    .der
+        {
+        Text-align:left;
+        Width:90%;
+        float:right;
+        
+        }   
 
     
 .tachado{
