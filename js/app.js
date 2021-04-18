@@ -1,3 +1,8 @@
+function percentage(num, per)
+{
+  return (num/100)*per;
+}
+
 function loadProduct(arr,strId,strLabel){
 //https://beautifytools.com/excel-to-json-converter.php excel to json
 
@@ -8,15 +13,19 @@ function loadProduct(arr,strId,strLabel){
     
     for (; i <= arrLen; i++ ) {
      
+        let floatNumber = parseFloat(arr[i].price);
+        let precio = floatNumber - percentage(floatNumber,arr[i].discount);
+        
+    
     if(arr[i].discount == "0"){
       strClass = "";     
-      arr[i].price_tachado = "";
+      arr[i].price = "";
       arr[i].discount = "";
-    }else{
-        strClass = "tachado";
-       
+    } else {
+       strClass = "tachado";
+       arr[i].price = "$&nbsp;"+arr[i].price;
+       arr[i].discount= arr[i].discount+"%&nbsp;OFF";
     }
-
     str = str + 
     
     '<div class="col-xs-6 col-md-3">'
@@ -27,8 +36,8 @@ function loadProduct(arr,strId,strLabel){
     +'     <div class="info">'
     +'         <div>'
     +'         <h5 class="name_product titleProduct"><span>'+arr[i].title+'</span></h5>'
-    +'         <h5 class='+ strClass+'>'+arr[i].price_tachado+'&nbsp</h5>'    
-    +'         <h5 class="price-text-color price-u">$&nbsp;'+arr[i].price+'</h5>'
+    +'         <h5 class='+ strClass+'>'+arr[i].price+'&nbsp</h5>'    
+    +'         <h5 class="price-text-color price-u">$&nbsp;'+parseFloat(precio).toFixed(2)+'</h5>'
     +'         </div>'
     +'       <button class="btn btn-secondary hidden-sm add btn-block" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar <span id="nbr-check" class="badge">0</span></button>'
     +'      </div>'
@@ -64,12 +73,12 @@ function loadProduct(arr,strId,strLabel){
 function loadAll(){
     
     var strComiditas = loadProduct(arrComiditas,"comiditas","Comiditas de Tela");
-    var strDidacticos = loadProduct(arrDidacticos,"didacticos","Juguetes Didácticos");
-    var strMuñecos = loadProduct(arrMuñecos,"muñecos","Muñec@s");
+  //  var strDidacticos = loadProduct(arrDidacticos,"didacticos","Juguetes Didácticos");
+   // var strMuñecos = loadProduct(arrMuñecos,"muñecos","Muñec@s");
 
-    $("#productsDidacticos").html(strDidacticos);
+    //$("#productsDidacticos").html(strDidacticos);
     $("#productsComiditas").html(strComiditas);
-    $("#productsMuñecos").html(strMuñecos);
+    //$("#productsMuñecos").html(strMuñecos);
 }
 
 function getData() {

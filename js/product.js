@@ -3,11 +3,10 @@ var arrComiditas = [
         "id": "ZULA_017",
         "title": "Helados",
         "description": "✔2 Cucuruchos\r\n✔2 Bochas (crema y Frutilla, Chocolate y Cereza)\r\n✔2 Helados de Agua (Limón y Naranja)\r\n\r\nEstos tipos de juegos didácticos fomentan la capacidad mental y la práctica de conocimientos en forma activa. Para un niño, es más fácil recordar y aprender algo divertido y entretenido😊.\r\n\r\nEspecificaciones:\r\n\r\n✔ Entregado bolsa de tela.\r\n✔ No tóxicos.\r\n✔ No son mordillos.\r\n✔ Rellena de vellón siliconado.\r\n✔ 100% confeccionadas a mano.\r\n\r\nSugeridos para niños mayores a 3 años.\r\n\r\nLos colores pueden variar según la disponibilidad de materiales en el momento de la confección.",
-        "price": "100.10",
+        "price": "790.00",
         "image_link": "https://live.staticflickr.com/65535/51004295955_182e01c13a_z.jpg",
         "category": "Comiditas",
-        "discount": "10%",
-        "price_tachado": "$ 790.00"
+        "discount": "10"
 
     },
     {
@@ -17,8 +16,7 @@ var arrComiditas = [
         "price": "575.00",
         "image_link": "https://live.staticflickr.com/65535/51072785323_b52cfa74fc_z.jpg",
         "category": "Comiditas",
-        "discount": "0",
-        "price_tachado": "0"
+        "discount": "0"
     },
     {
         "id": "ZULA_020",
@@ -27,8 +25,7 @@ var arrComiditas = [
         "price": "750.00",
         "image_link": "https://live.staticflickr.com/65535/51072781963_ac4658528e_z.jpg",
         "category": "Comiditas",
-        "discount": "0",
-        "price_tachado": "0"
+        "discount": "0"
     },
     {
         "id": "ZULA_021",
@@ -37,8 +34,7 @@ var arrComiditas = [
         "price": "835.00",
         "image_link": "https://live.staticflickr.com/65535/51073576357_4800dc5c8e_z.jpg",
         "category": "Comiditas",
-        "discount": "0",
-        "price_tachado": "0"
+        "discount": "0"
     },
     {
         "id": "ZULA_022",
@@ -47,8 +43,7 @@ var arrComiditas = [
         "price": "820.00",
         "image_link": "https://live.staticflickr.com/65535/51004296235_536d3efeec_z.jpg",
         "category": "Comiditas",
-        "discount": "0",
-        "price_tachado": "0"
+        "discount": "0"
     },
     {
         "id": "ZULA_023",
@@ -57,8 +52,7 @@ var arrComiditas = [
         "price": "675.00",
         "image_link": "https://live.staticflickr.com/65535/51073477031_20bb34e33e_z.jpg",
         "category": "Comiditas",
-        "discount": "0",
-        "price_tachado": "0"
+        "discount": "0"
     },
     {
         "id": "ZULA_024",
@@ -67,8 +61,7 @@ var arrComiditas = [
         "price": "720.00",
         "image_link": "https://live.staticflickr.com/65535/51073578187_9f05635e8c_z.jpg",
         "category": "Comiditas",
-        "discount": "0",
-        "price_tachado": "0"
+        "discount": "0"
     },
     {
         "id": "ZULA_025",
@@ -77,8 +70,7 @@ var arrComiditas = [
         "price": "820.00",
         "image_link": "https://live.staticflickr.com/65535/51004293430_74ba91214c_z.jpg",
         "category": "Comiditas",
-        "discount": "0",
-        "price_tachado": "0"
+        "discount": "0"
     },
     {
         "id": "ZULA_026",
@@ -87,8 +79,7 @@ var arrComiditas = [
         "price": "1050.00",
         "image_link": "https://live.staticflickr.com/65535/51072779983_6e66fec1af_z.jpg",
         "category": "Comiditas",
-        "discount": "0",
-        "price_tachado": "0"
+        "discount": "0"
     },
     {
         "id": "ZULA_027",
@@ -97,8 +88,7 @@ var arrComiditas = [
         "price": "1880.00",
         "image_link": "https://live.staticflickr.com/65535/51072778113_7c73e8a5cb_z.jpg",
         "category": "Comiditas",
-        "discount": "0",
-        "price_tachado": "0"
+        "discount": "0"
     },
     {
         "id": "ZULA_028",
@@ -107,8 +97,7 @@ var arrComiditas = [
         "price": "900.00",
         "image_link": "https://live.staticflickr.com/65535/51073473881_3cf23c9bf1_z.jpg",
         "category": "Comiditas",
-        "discount": "0",
-        "price_tachado": "0"
+        "discount": "0"
     },
     {
         "id": "ZULA_029",
@@ -117,8 +106,7 @@ var arrComiditas = [
         "price": "575.00",
         "image_link": "https://live.staticflickr.com/65535/51073582422_eec271d669_z.jpg",
         "category": "Comiditas",
-        "discount": "0",
-        "price_tachado": "0"
+        "discount": "0"
     },
     {
         "id": "ZULA_030",
@@ -127,8 +115,7 @@ var arrComiditas = [
         "price": "710.00",
         "image_link": "https://live.staticflickr.com/65535/51073477321_9056ebb228_z.jpg",
         "category": "Comiditas",
-        "discount": "0",
-        "price_tachado": "0"
+        "discount": "0"
     },
     {
         "id": "ZULA_031",
@@ -137,8 +124,7 @@ var arrComiditas = [
         "price": "755.00",
         "image_link": "https://live.staticflickr.com/65535/51072779528_0393a20a9d_z.jpg",
         "category": "Comiditas",
-        "discount": "0",
-        "price_tachado": "0"
+        "discount": "0"
     },
     {
         "id": "ZULA_032",
@@ -147,8 +133,7 @@ var arrComiditas = [
         "price": "700.00",
         "image_link": "https://live.staticflickr.com/65535/51073473536_0f521a30d3_z.jpg",
         "category": "Comiditas",
-        "discount": "0",
-        "price_tachado": "0"
+        "discount": "50"
     }
 ]
 
