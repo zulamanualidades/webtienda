@@ -1,3 +1,4 @@
+
 function percentage(num, per)
 {
   return (num/100)*per;
@@ -58,6 +59,7 @@ function loadProduct(arr,strId,strLabel){
     +'            </div>'
     +'            <div class="modal-footer">'
     +'              <button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>'
+    +'              <button class="btn btn-secondary hidden-sm add btn-block" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar <span id="nbr-check" class="badge">0</span></button>'
     +'            </div>'
     +'          </div>'
     +'        </div>'
@@ -144,6 +146,13 @@ $(document).ready(function () {
     
 loadAll();
 
+var url = window.location.href;
+    var modalToOpen = url.substring(url.indexOf("#"));
+
+    if(window.location.href.indexOf(modalToOpen) != -1) {
+        $(modalToOpen).modal("show");
+    }
+    
   /***********************************************************************************/  
   /***********************************************************************************/
   /*================================ Shopping Cart ==================================*/
@@ -172,7 +181,7 @@ loadAll();
            // alert(add.parent().parent().parent().find('.price-u').text());
             
             var price = add.parent().parent().parent().find('.price-u').text().substring(2);
-           
+          
            var q=1;
            var tr=
                 '<tr id="ligne">' +
