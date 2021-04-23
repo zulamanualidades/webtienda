@@ -6,7 +6,7 @@ var arrComiditas = [
         "price": "790.00",
         "image_link": "https://live.staticflickr.com/65535/51004295955_182e01c13a_z.jpg",
         "category": "Comiditas",
-        "discount": ""
+        "discount": "0"
 
     },
     {
@@ -133,7 +133,7 @@ var arrComiditas = [
         "price": "700.00",
         "image_link": "https://live.staticflickr.com/65535/51073473536_0f521a30d3_z.jpg",
         "category": "Comiditas",
-        "discount": ""
+        "discount": "0"
     }
 ]
 

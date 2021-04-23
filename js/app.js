@@ -40,7 +40,7 @@ function loadProduct(arr,strId,strLabel){
     +'         <h5 class='+ strClass+'>'+arr[i].price+'&nbsp</h5>'    
     +'         <h5 class="price-text-color price-u">$&nbsp;'+parseFloat(precio).toFixed(2)+'</h5>'
     +'         </div>'
-    +'       <button class="btn btn-secondary hidden-sm add btn-block" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar <span id="nbr-check" class="badge">0</span></button>'
+    +'       <button class="btn btn-secondary hidden-sm add btn-block" data-title="'+ arr[i].title +'" data-price='+parseFloat(precio).toFixed(2)+' id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar</button>'
     +'      </div>'
     +'   </div>'
     +'   <div class="clearfix"></div>'
@@ -59,7 +59,7 @@ function loadProduct(arr,strId,strLabel){
     +'            </div>'
     +'            <div class="modal-footer">'
     +'              <button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>'
-    +'              <button class="btn btn-secondary hidden-sm add btn-block" id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar <span id="nbr-check" class="badge">0</span></button>'
+    +'       <button class="btn btn-secondary hidden-sm add btn-block" data-title="'+arr[i].title+'" data-price='+parseFloat(precio).toFixed(2)+' id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar </button>'
     +'            </div>'
     +'          </div>'
     +'        </div>'
@@ -146,13 +146,15 @@ $(document).ready(function () {
     
 loadAll();
 
-var url = window.location.href;
+    var url = window.location.href;
     var modalToOpen = url.substring(url.indexOf("#"));
 
-    if(window.location.href.indexOf(modalToOpen) != -1) {
+    //alert (window.location.href.indexOf(modalToOpen));
+
+    if(window.location.href.indexOf(modalToOpen) != 0) {
         $(modalToOpen).modal("show");
     }
-    
+
   /***********************************************************************************/  
   /***********************************************************************************/
   /*================================ Shopping Cart ==================================*/
@@ -168,10 +170,14 @@ var url = window.location.href;
         // Retrieve the product ID 
         var id_product = add.attr('id-data');
         var category = add.attr('data-category');
+        var price = add.attr('data-price');
+        var title= add.attr('data-title');
 
-        //alert (category);
+        //alert($(this).find('#nbr-check'));
+
         //Retrieve the number of times is the selected product
         var checked=add.parent().parent().parent().find('#nbr-check');
+        
         //alert (checked.text());
         //Check if the product is already in the shopping cart
         if($.inArray(id_product,tab_panier)==-1){
@@ -180,14 +186,15 @@ var url = window.location.href;
 
            // alert(add.parent().parent().parent().find('.price-u').text());
             
-            var price = add.parent().parent().parent().find('.price-u').text().substring(2);
+            var price_modif = add.parent().parent().parent().find('.price-u').text().substring(2);
+            var name = add.parent().parent().parent().find('.name_product').text();
           
            var q=1;
            var tr=
                 '<tr id="ligne">' +
                     '<td class="id_produit hidden" id-data="'+ id_product +'" ></td> '+
                     '<td class="id_category hidden" data-category="'+ category +'" ></td> '+
-                    '<td class="nom">'+add.parent().parent().parent().find('.name_product').text()+'</td>'+
+                    '<td class="nom">'+title+'</td>'+
                     '<td class="quantite hidden" >'+ q +'</td>'+
                     '<td class="qte"><button id="reduce" class="btn btn-info btn-sm plusmoin btn-raised btn-circle"><em class="fa fa-minus"></em></button><span class="quantite"> '+ q +'&nbsp;</span><button id="addQ" class="btn btn-info btn-sm plusmoin btn-raised btn-circle"><em class="fa fa-plus"></em></button> </td>'+
                     '<td class="total">'+price+'</td>'+
@@ -217,8 +224,8 @@ var url = window.location.href;
                 }
             );
 
-            checked.parent().removeClass('hidden')
-            checked.text('1')
+            checked.parent().removeClass('hidden');
+            checked.text('1');
         }else{
             //If the product is in the shopping cart, increments the quantity + the price of the product
             $('tbody').find('tr').each(function () {
