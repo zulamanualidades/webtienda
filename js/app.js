@@ -47,7 +47,7 @@ function loadProduct(arr,strId,strLabel){
     +' </div>'
     
     +'<div class="modal fade" id="'+arr[i].id+'" tabindex="-1" role="document" aria-labelledby="basicModal" aria-hidden="true">'
-    +'        <div class="modal-dialog">'
+    +'        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollabl">'
     +'          <div class="modal-content">'
     +'            <div class="modal-header">'
     +'              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>'
