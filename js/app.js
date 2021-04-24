@@ -32,7 +32,7 @@ function loadProduct(arr,strId,strLabel){
     '<div class="col-xs-6 col-md-3">'
     +' <div class="thumbnail" style="border: 0px" >'
     +'  <div class="ribbon"><span>'+arr[i].discount +'</span></div>'
-    +'     <img src="'+ arr[i].image_link+'" class="img-responsive" alt="a" >'
+    +'     <img src="'+ arr[i].image_link+'" class="img-responsive" alt="'+arr[i].title+'" >'
     +'     <button class="btn btn-link hidden-sm detail btn-block" data-toggle="modal" data-target="#'+arr[i].id+'"><i class="fa fa-list"></i> Ver Detalle</button>'
     +'     <div class="info">'
     +'         <div>'
@@ -54,12 +54,13 @@ function loadProduct(arr,strId,strLabel){
     +'              <h4 class="modal-title" id="myModalLabel">'+arr[i].title+'</h4>'
     +'            </div>'
     +'            <div class="modal-body">'
-    +'              <pre>'+arr[i].description
-    +'              </pre>'
+    +'     <img src="'+ arr[i].image_link+'" class="img-responsive" alt="'+arr[i].title+'" >'
+    +'         <h5 class="price-text-color price-u">$&nbsp;'+parseFloat(precio).toFixed(2)+'</h5>'
+    +'             <button data-dismiss="modal" class="btn btn-secondary hidden-sm add btn-block" data-title="'+arr[i].title+'" data-price='+parseFloat(precio).toFixed(2)+' id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar </button>'
+    +'             <pre>'+arr[i].description+'</pre>'
     +'            </div>'
     +'            <div class="modal-footer">'
-    +'              <button type="button" class="btn btn-default" data-dismiss="modal">Volver</button>'
-    +'       <button class="btn btn-secondary hidden-sm add btn-block" data-title="'+arr[i].title+'" data-price='+parseFloat(precio).toFixed(2)+' id-data="'+arr[i].id+'" data-category="'+arr[i].category+'"><i class="fa fa-shopping-cart"></i> Agregar </button>'
+    +'               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>'
     +'            </div>'
     +'          </div>'
     +'        </div>'
@@ -73,14 +74,10 @@ function loadProduct(arr,strId,strLabel){
 
 
 function loadAll(){
-    
-    var strComiditas = loadProduct(arrComiditas,"comiditas","Comiditas de Tela");
-  //  var strDidacticos = loadProduct(arrDidacticos,"didacticos","Juguetes Didácticos");
-   // var strMuñecos = loadProduct(arrMuñecos,"muñecos","Muñec@s");
 
-    //$("#productsDidacticos").html(strDidacticos);
-    $("#productsComiditas").html(strComiditas);
-    //$("#productsMuñecos").html(strMuñecos);
+    $("#productsDidacticos").html(loadProduct(arrDidacticos,"didacticos","Juguetes Didácticos"));
+    $("#productsComiditas").html(loadProduct(arrComiditas,"comiditas","Comiditas de Tela"));
+    $("#productsMuñecos").html(loadProduct(arrMuñecos,"muñecos","Muñec@s"));
 }
 
 function getData() {
@@ -178,8 +175,12 @@ loadAll();
         //Retrieve the number of times is the selected product
         var checked=add.parent().parent().parent().find('#nbr-check');
         
-        //alert (checked.text());
         //Check if the product is already in the shopping cart
+       
+          $('#pedido_panel').collapse("show");
+
+        
+
         if($.inArray(id_product,tab_panier)==-1){
             // If the product does not exist in the shopping cart, than add it to the shopping cart
             tab_panier.push(id_product);
@@ -188,7 +189,11 @@ loadAll();
             
             var price_modif = add.parent().parent().parent().find('.price-u').text().substring(2);
             var name = add.parent().parent().parent().find('.name_product').text();
+            
+           // $('.pedido_panel').collapse('toggle');
+
           
+
            var q=1;
            var tr=
                 '<tr id="ligne">' +

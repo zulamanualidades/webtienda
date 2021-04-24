@@ -144,6 +144,7 @@ pre {
     white-space: pre-wrap;
     word-break: keep-all;
     background: #FFF;
+    margin-top: 10px;
   }
 
 .col-item
