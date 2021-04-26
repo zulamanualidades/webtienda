@@ -196,7 +196,7 @@ var arrDidacticos = [
     {
         "id": "ZULA_034",
         "title": "Domino",
-        "description": "15 Fichas\r\nFiguras Geometricas\r\nColores Atractivos\r\n1 bola contenedora",
+        "description": "15 Fichas\r\nFiguras Geometricas\r\nColores Atractivos\r\n1 bolsa contenedora",
         "price": "430.00",
         "image_link": "https://live.staticflickr.com/65535/51139102443_451f808bcc_k.jpg",
         "category": "Didacticos",
@@ -204,7 +204,7 @@ var arrDidacticos = [
         "price_tachado": "0"
     },
     {
-        "id": "ZULA_034",
+        "id": "ZULA_035",
         "title": "Memotest",
         "description": "Contiene 16 fichas y bolsa para guardarlas",
         "price": "400.00",
