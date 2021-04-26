@@ -77,7 +77,7 @@ function loadAll(){
 
     $("#productsDidacticos").html(loadProduct(arrDidacticos,"didacticos","Juguetes Didácticos"));
     $("#productsComiditas").html(loadProduct(arrComiditas,"comiditas","Comiditas de Tela"));
-    $("#productsMuñecos").html(loadProduct(arrMuñecos,"muñecos","Muñec@s"));
+    $("#productsMuñecos").html(loadProduct(arrMuñecos,"munecos","Muñec@s"));
 }
 
 function getData() {
@@ -150,7 +150,7 @@ $(document).ready(function () {
     //alert (window.location.href.indexOf(modalToOpen));
 
     if(window.location.href.indexOf(modalToOpen) != 0) {
-        if (modalToOpen != "#comiditas" && modalToOpen != "#didacticos" && modalToOpen != "#mu%C3%B1ecos" ) {
+        if (modalToOpen != "#comiditas" && modalToOpen != "#didacticos" && modalToOpen != "#munecos" ) {
             $(modalToOpen).modal("show");
         }
         
