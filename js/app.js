@@ -141,15 +141,19 @@ function sendOrder() {
 
 $(document).ready(function () {
     
-loadAll();
+    loadAll();
 
     var url = window.location.href;
     var modalToOpen = url.substring(url.indexOf("#"));
-
+    
+    //alert (modalToOpen);
     //alert (window.location.href.indexOf(modalToOpen));
 
     if(window.location.href.indexOf(modalToOpen) != 0) {
-        $(modalToOpen).modal("show");
+        if (modalToOpen != "#comiditas" && modalToOpen != "#didacticos" && modalToOpen != "#mu%C3%B1ecos" ) {
+            $(modalToOpen).modal("show");
+        }
+        
     }
 
   /***********************************************************************************/  

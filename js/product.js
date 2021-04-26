@@ -1,5 +1,15 @@
 var arrComiditas = [
     {
+        "id": "ZULA_004",
+        "title": "Kit  Malvaviscos",
+        "description": "✔ 2 Sándwich de galletita (chocolate y malvaviscos)\r\n✔ 2 Malvaviscos\r\n\r\nEspecificaciones:\r\n✔ Rellena de vellón siliconado.\r\n✔ Elaborada con tela polar.\r\n✔ 100% confeccionadas a mano.\r\n\r\nLos colores pueden variar según la disponibilidad de materiales en el momento de la confección.",
+        "price": "600.00",
+        "image_link": "https://live.staticflickr.com/65535/51073477156_f9f6356eeb_k.jpg",
+        "category": "Comiditas",
+        "discount": "0",
+        "price_tachado": "0"
+    },
+    {
         "id": "ZULA_017",
         "title": "Helados",
         "description": "✔2 Cucuruchos\r\n✔2 Bochas (crema y Frutilla, Chocolate y Cereza)\r\n✔2 Helados de Agua (Limón y Naranja)\r\n\r\nEstos tipos de juegos didácticos fomentan la capacidad mental y la práctica de conocimientos en forma activa. Para un niño, es más fácil recordar y aprender algo divertido y entretenido😊.\r\n\r\nEspecificaciones:\r\n\r\n✔ Entregado bolsa de tela.\r\n✔ No tóxicos.\r\n✔ No son mordillos.\r\n✔ Rellena de vellón siliconado.\r\n✔ 100% confeccionadas a mano.\r\n\r\nSugeridos para niños mayores a 3 años.\r\n\r\nLos colores pueden variar según la disponibilidad de materiales en el momento de la confección.",
@@ -164,11 +174,11 @@ var arrDidacticos = [
         "price_tachado": "0"
     },
     {
-        "id": "ZULA_002",
-        "title": "Bowling",
-        "description": "✔ 6 bolos (Altura: 20 cm Aprox)\r\n✔ 1 Pelota\r\n\r\nEl bowling es una de las actividades más entretenidas tanto para los adultos como para los más pequeños. El objetivo del juego es derribar el mayor número bolos lanzando una bola. Es una forma de hacer ejercicio de una manera entretenida y divertida.\r\n\r\nEspecificaciones:\r\n✔Entregado en Bolsa de Tela\r\n✔ No tóxicos.\r\n✔ Rellena de vellón siliconado.\r\n✔ Confeccionado en Tela lavable.\r\n✔ 100% confeccionadas a mano.\r\n\r\nLos colores pueden variar según la disponibilidad de materiales en el momento de la confección.",
-        "price": "1150.00",
-        "image_link": "https://lh3.googleusercontent.com/pw/ACtC-3fjYmLzLdJTTYbby-tP1NBKrnTVaXJOpcX1HH3cFVeBUa9q9RnVKiLmLytiJcVPQlP-eAhG7YNdm--1eeN8rBa759LdAFAhvOKOPKG_u4muYZwjGwWoGIEBbSMg2maPIpH590Hk9nk7RWt2QFDr5jWmUA=s657-no?authuser=0",
+        "id": "ZULA_033",
+        "title": "Tateti",
+        "description": "Juego de TA-TE-TI\r\n10 Fichas, bolsita para guardar que se convierte en Tablero",
+        "price": "450.00",
+        "image_link": "https://live.staticflickr.com/65535/51139989520_511a3a1344_k.jpg",
         "category": "Didacticos",
         "discount": "0",
         "price_tachado": "0"
@@ -184,11 +194,21 @@ var arrDidacticos = [
         "price_tachado": "0"
     },
     {
-        "id": "ZULA_004",
-        "title": "Kit  Malvaviscos",
-        "description": "✔ 2 Sándwich de galletita (chocolate y malvaviscos)\r\n✔ 2 Malvaviscos\r\n\r\nEspecificaciones:\r\n✔ Rellena de vellón siliconado.\r\n✔ Elaborada con tela polar.\r\n✔ 100% confeccionadas a mano.\r\n\r\nLos colores pueden variar según la disponibilidad de materiales en el momento de la confección.",
-        "price": "600.00",
-        "image_link": "https://live.staticflickr.com/65535/51073477156_f9f6356eeb_k.jpg",
+        "id": "ZULA_034",
+        "title": "Domino",
+        "description": "15 Fichas\r\nFiguras Geometricas\r\nColores Atractivos\r\n1 bola contenedora",
+        "price": "450.00",
+        "image_link": "https://live.staticflickr.com/65535/51139102443_451f808bcc_k.jpg",
+        "category": "Didacticos",
+        "discount": "0",
+        "price_tachado": "0"
+    },
+    {
+        "id": "ZULA_034",
+        "title": "Memotest",
+        "description": "Contiene 16 fichas y bolsa para guardarlas",
+        "price": "450.00",
+        "image_link": "https://live.staticflickr.com/65535/51138207092_3fac142017_k.jpg",
         "category": "Didacticos",
         "discount": "0",
         "price_tachado": "0"
@@ -219,6 +239,16 @@ var arrDidacticos = [
         "description": "Pelota de gajos de color.\r\nConfeccionado 100% a mano, en tela polar. Relleno de vellón siliconado.\r\nMedidas aprox.: 20 cm diámetro.\r\n\r\nLos colores pueden variar según la disponibilidad de materiales en el momento de la confección.",
         "price": "1150.00",
         "image_link": "https://live.staticflickr.com/65535/51073577892_19742a4523_z.jpg",
+        "category": "Didacticos",
+        "discount": "0",
+        "price_tachado": "0"
+    },
+    {
+        "id": "ZULA_002",
+        "title": "Bowling",
+        "description": "✔ 6 bolos (Altura: 20 cm Aprox)\r\n✔ 1 Pelota\r\n\r\nEl bowling es una de las actividades más entretenidas tanto para los adultos como para los más pequeños. El objetivo del juego es derribar el mayor número bolos lanzando una bola. Es una forma de hacer ejercicio de una manera entretenida y divertida.\r\n\r\nEspecificaciones:\r\n✔Entregado en Bolsa de Tela\r\n✔ No tóxicos.\r\n✔ Rellena de vellón siliconado.\r\n✔ Confeccionado en Tela lavable.\r\n✔ 100% confeccionadas a mano.\r\n\r\nLos colores pueden variar según la disponibilidad de materiales en el momento de la confección.",
+        "price": "1150.00",
+        "image_link": "https://lh3.googleusercontent.com/pw/ACtC-3fjYmLzLdJTTYbby-tP1NBKrnTVaXJOpcX1HH3cFVeBUa9q9RnVKiLmLytiJcVPQlP-eAhG7YNdm--1eeN8rBa759LdAFAhvOKOPKG_u4muYZwjGwWoGIEBbSMg2maPIpH590Hk9nk7RWt2QFDr5jWmUA=s657-no?authuser=0",
         "category": "Didacticos",
         "discount": "0",
         "price_tachado": "0"
