@@ -21,7 +21,7 @@ var arrComiditas = [
     },
     {
         "id": "ZULA_019",
-        "title": "Kit de Frutas x3 Unidades",
+        "title": "Kit Frutas x3",
         "description": "✔ 1 Manzana 🍎\r\n✔ 1 Banana 🍌\r\n✔ 1 Pera 🍐\r\n\r\nEspecificaciones:\r\n✔ Entregado en bolsa de tela\r\n✔ No tóxicos.\r\n✔ No son mordillos.\r\n✔ Rellena de vellón siliconado.\r\n✔ Elaborada con tela polar lavable.\r\n✔ 100% confeccionadas a mano.\r\n✔ No vienen con el cajón de frutas.\r\n\r\nLos colores pueden variar según la disponibilidad de materiales en el momento de la confección.",
         "price": "575.00",
         "image_link": "https://live.staticflickr.com/65535/51072785323_b52cfa74fc_z.jpg",
@@ -121,7 +121,7 @@ var arrComiditas = [
     },
     {
         "id": "ZULA_029",
-        "title": "Kit Verduras x3 Unidades",
+        "title": "Kit Verduras x3",
         "description": "✔ 1 Zanahoria 🥕\r\n✔ 1 Lechuga\r\n✔ 1 Tomate 🍅\r\n\r\nEspecificaciones:\r\n\r\n✔ Entregado en bolsa de tela\r\n✔ No tóxicos.\r\n✔ No son mordillos.\r\n✔ Rellena de vellón siliconado.\r\n✔ Elaborada con tela polar lavable.\r\n✔ 100% confeccionadas a mano.\r\n✔ No vienen con el cajón de frutas.\r\n\r\nLos colores pueden variar según la disponibilidad de materiales en el momento de la confección.",
         "price": "575.00",
         "image_link": "https://live.staticflickr.com/65535/51073582422_eec271d669_z.jpg",
