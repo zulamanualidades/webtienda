@@ -52,7 +52,7 @@ var arrComiditas": [
         {
             "id": "ZULA_022",
             "title": "Kit Hamburguesa",
-            "description": "✔ 2 Panes 🍔\r\n✔ 1 Medallón de Carne\r\n✔ 1 Queso Cheddar 🧀\r\n✔ 1 Jamón\r\n✔ 1 Huevo Fito\r\n✔ 1 Rodaje de Tomate 🍅\r\n✔ 1 Hoja de Lechuga\r\n✔ 1 manzana 🍎\r\n\r\nEspecificaciones:\r\n✔ Entregado con bolsa de tela.\r\n✔ No tóxicos\r\n✔ No son mordillos.\r\n✔ Rellena de vellón siliconado.\r\n✔ 100% confeccionadas a mano.\r\n✔ El tamaño es como el de una hamburguesa de verdad.\r\n\r\nLos colores pueden variar según la disponibilidad de materiales en el momento de la confección.",
+            "description": "✔ 2 Panes 🍔\r\n✔ 1 Medallón de Carne\r\n✔ 1 Queso Cheddar 🧀\r\n✔ 1 Jamón\r\n✔ 1 Huevo Fito\r\n✔ 1 Rodaje de Tomate 🍅\r\n✔ 1 Hoja de Lechuga\r\n✔ 1 manzana 🍎\r\n\r\nEspecificaciones:\r\n✔ Entregado con bolsa de tela.\r\n✔ No tóxicos\r\n✔ No son mordillos\r\n✔ Rellena de vellón siliconado.\r\n✔ 100% confeccionadas a mano.\r\n✔ El tamaño es como el de una hamburguesa de verdad.\r\n\r\nLos colores pueden variar según la disponibilidad de materiales en el momento de la confección.",
             "price": "1915.00",
             "image_link": "https://live.staticflickr.com/65535/51209779444_38f7f88d22_k.jpg",
             "category": "Comiditas",
@@ -329,7 +329,7 @@ var arrMuñecos: [
         {
             "id": "ZULA_015",
             "title": "Muñeco Sensorial MIKU",
-            "description": "😻MIKU (Juguete Sensorial) 😻\r\n\r\nEs ideal para bebes, por su tamaño y porque es blandito para abrazar, apretar, morder.\r\nTiene cintas en su carita que permite que las manitos de los bebes exploren distintas texturas.\r\n\r\nMuñeco confeccionado 100% a mano, en tela de algodón. Detalle de bigotes en cinta, relleno de vellon siliconado.\r\nMedidas aprox.: 19cm alto x 10cm ancho",
+            "description": "😻MIKU (Juguete sensorial) 😻\r\n\r\nEs ideal para bebes, por su tamaño y porque es blandito para abrazar, apretar, morder.\r\nTiene cintas en su carita que permite que las manitos de los bebes exploren distintas texturas.\r\n\r\nMuñeco confeccionado 100% a mano, en tela de algodón. Detalle de bigotes en cinta, relleno de vellon siliconado.\r\nMedidas aprox.: 19cm alto x 10cm ancho",
             "price": "1870.00",
             "image_link": "https://live.staticflickr.com/65535/51004294825_fc6212ecec_z.jpg",
             "category": "Muñecos",
